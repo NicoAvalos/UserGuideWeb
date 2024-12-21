@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-Workflow_Domain_Modeling/Indicator_Kriging" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.6.3">
+<title data-rh="true">**Kriging** | Annapurna™ Resource</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://NicoAvalos.github.io/UserGuideWeb/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://NicoAvalos.github.io/UserGuideWeb/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://NicoAvalos.github.io/UserGuideWeb/docs/Workflow_Domain_Modeling/Indicator_Kriging"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="**Kriging** | Annapurna™ Resource"><meta data-rh="true" name="description" content="kriging}"><meta data-rh="true" property="og:description" content="kriging}"><link data-rh="true" rel="icon" href="https://www.apmodtech.com/static/images/apmt/APMT_H_tablet.png"><link data-rh="true" rel="canonical" href="https://NicoAvalos.github.io/UserGuideWeb/docs/Workflow_Domain_Modeling/Indicator_Kriging"><link data-rh="true" rel="alternate" href="https://NicoAvalos.github.io/UserGuideWeb/docs/Workflow_Domain_Modeling/Indicator_Kriging" hreflang="en"><link data-rh="true" rel="alternate" href="https://NicoAvalos.github.io/UserGuideWeb/docs/Workflow_Domain_Modeling/Indicator_Kriging" hreflang="x-default"><link rel="stylesheet" href="/UserGuideWeb/assets/css/styles.e5e8328c.css">
+<script src="/UserGuideWeb/assets/js/runtime~main.be6fb6de.js" defer="defer"></script>
+<script src="/UserGuideWeb/assets/js/main.19e9459c.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const n=new URLSearchParams(window.location.search).entries();for(var[t,e]of n)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="navbar navbar--fixed-top"><div class="navbar__inner"><div class="navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/UserGuideWeb/"><div class="navbar__logo"><img src="/UserGuideWeb/img/apmt.png" alt="My Site Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/UserGuideWeb/img/apmt.png" alt="My Site Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">General Introduction</b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/UserGuideWeb/docs/Workflow_Domain_Modeling/Nearest_Neighbor">Workflows</a><a class="navbar__item navbar__link" href="/UserGuideWeb/docs/Elements/Topography_and_Meshes">Elements</a><a class="navbar__item navbar__link" href="/UserGuideWeb/docs/Analysis/intro">Analysis</a><a class="navbar__item navbar__link" href="/UserGuideWeb/docs/Utilities">Visualization</a></div><div class="navbar__items navbar__items--right"><a class="navbar__item navbar__link" href="/UserGuideWeb/docs/General_Introduction/support">Support</a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="Switch between dark and light mode (currently light mode)" aria-label="Switch between dark and light mode (currently light mode)" aria-live="polite" aria-pressed="false"><svg viewBox="0 0 24 24" width="24" height="24" class="lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" class="darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" role="button" aria-expanded="true" href="/UserGuideWeb/docs/Workflow_Domain_Modeling/Nearest_Neighbor">Workflow Domain Modeling</a></div><ul style="display:block;overflow:visible;height:auto" class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/UserGuideWeb/docs/Workflow_Domain_Modeling/Nearest_Neighbor">Nearest Neighbor, NN</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/UserGuideWeb/docs/Workflow_Domain_Modeling/Indicator_Kriging">Indicator Kriging, IK</a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/UserGuideWeb/docs/Workflow_Resource_Modeling/Nearest-Neighbor">Workflow Resource Modeling</a></div></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs" itemscope="" itemtype="https://schema.org/BreadcrumbList"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/UserGuideWeb/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><span class="breadcrumbs__link">Workflow Domain Modeling</span><meta itemprop="position" content="1"></li><li itemscope="" itemprop="itemListElement" itemtype="https://schema.org/ListItem" class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link" itemprop="name">Indicator Kriging, IK</span><meta itemprop="position" content="2"></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1><strong>Kriging</strong></h1></header>
+<p>The process for conducting domain estimation using Kriging is akin to the application of Nearest Neighbor. The guide is divided into two sections: the fully automated application and the customized application. It is possible to combine automated and customized options as needed.</p>
+<p>Below is a step-by-step guide on how to use these tools. Although the usage is intuitive, user experience may influence the decisions and adjustments to be made.</p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="automated"><strong>Automated</strong><a href="#automated" class="hash-link" aria-label="Direct link to automated" title="Direct link to automated">​</a></h2>
+<p><strong>Step 1: Instance Creation</strong></p>
+<ul>
+<li>
+<p>Upon selecting this tool from the task tree on the left, the platform presents an interface where you can create a &quot;new instance&quot; or select existing instances to open, clone, or delete.</p>
+</li>
+<li>
+<p>Enter the name and click the &quot;Build New Instance&quot; button to generate it. Remember that the name cannot be modified later. The interface immediately moves to the second step, working on the instance.</p>
+<p><strong>Step 2: Search Plan Settings</strong></p>
+<ul>
+<li>Once the instance is created, the interface prompts you to make adjustments. You&#x27;re presented with two alternatives: Customized or Automated. For this example, we select <strong>Automated</strong> for the three possible parameters to apply an indicator Kriging estimation:<!-- -->
+<ol>
+<li>a) Variogram Models</li>
+<li>b) Kriging Plan</li>
+<li>c) Additional Parameters.</li>
+</ol>
+</li>
+</ul>
+</li>
+</ul>
+<p>![][image52]</p>
+<p><strong>Step 3: Dataset Selection</strong></p>
+<ul>
+<li>Choose the block model and points containing the database for domain estimations, selecting at least one attribute to estimate. You may or may not apply specific filters for the block model and/or Point Dataset.</li>
+<li>Remember that both the block model and point information must refer to the same project, maintaining spatial correlation with the project area.</li>
+</ul>
+<p><strong>Step 4: Save and Run</strong></p>
+<ul>
+<li>After making adjustments and selections, save the settings. A window will appear to decide whether to run the estimation domain modeling. Click &quot;Run Instance,&quot; then confirm the action in the popup window.</li>
+<li>You can check the instance&#x27;s status in &quot;Logged.&quot; If you wish to explore other tools offered by Annapurna or start a new instance in another project, this is an available option.</li>
+<li>Once completed, review the report with the parameters adjusted by Annapurna automatically. Additionally, examine the results in 3D projection in the Utilities section and save the visualization link for sharing.</li>
+<li>This instance can be cloned to create a new one based on the automatically calculated parameters and make customized adjustments if needed.</li>
+</ul>
+<p>![][image53]</p>
+<p><strong>Step 5 : Results</strong></p>
+<ul>
+<li>Upon completion of the processing, a new column is generated in the block model database with the resulting information. This column is named after the attribute used for estimation, followed by the estimation method, suffixed with &quot;_Est&quot; to indicate it as estimated.</li>
+<li>Example: For instance, using &quot;CuT&quot; as the attribute and the &quot;Kriging&quot; method, the resulting column would be named &quot;CuT_KK_Est&quot;.</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="customized"><strong>Customized</strong><a href="#customized" class="hash-link" aria-label="Direct link to customized" title="Direct link to customized">​</a></h2>
+<p><strong>Step 1: Instance Creation</strong></p>
+<ul>
+<li>Upon selecting this tool from the task tree on the left (Domain Modeling, Kriging), the platform provides an interface where you can create a &quot;new instance&quot; or select existing instances to open, clone, or delete.</li>
+<li>Creating an instance from scratch requires entering a name and clicking the &quot;New instance&quot; button to generate it. Remember that the assigned name cannot be modified later.</li>
+<li>The interface immediately proceeds to the second step, working on the instance. If you&#x27;ve previously executed a procedure in your project either automated or customized and wish to work on that instance with new plan adjustments:<!-- -->
+<ul>
+<li>Select the name of the completed instance and click &quot;Open&quot; to continue working on the same project under the same name.</li>
+<li>Alternatively, select the name of the completed instance, click &quot;Clone,&quot; and then provide a new name for this cloned instance. Once created, select it from the dropdown list and click &quot;Open.&quot;</li>
+<li>Working from a completed and executed instance allows you to utilize the parameters it brings and modify them as needed.</li>
+</ul>
+</li>
+</ul>
+<p>![][image47]</p>
+<p><strong>Step 2: Search Plan Settings</strong></p>
+<ul>
+<li>
+<p>Once the instance is created, the interface prompts you to make adjustments. You&#x27;re presented with two alternatives: Customized or Automated. For this example, we select <strong>Customized</strong> for the three possible parameters to apply an indicator Kriging estimation. This will prompt the interface to sequentially display each parameter after saving and continuing, allowing you to make adjustments as desired. (Conditional on this being step 4 of the process):</p>
+<ol>
+<li>Variogram Models</li>
+<li>Kriging Plan</li>
+<li>Additional Parameters.</li>
+</ol>
+<p><strong>Step 3: Dataset Selection</strong></p>
+</li>
+<li>
+<p>Choose the block model and points containing the database for domain estimations, selecting at least one attribute to estimate. You may or may not apply specific filters for the block model and/or Point Dataset.</p>
+</li>
+<li>
+<p>Remember that both the block model and point information must refer to the same project, maintaining spatial correlation with the project area.</p>
+</li>
+</ul>
+<p>![][image54]</p>
+<p><strong>Step 4: Save and Continue</strong></p>
+<ul>
+<li>After making adjustments and selections, save the settings. A window will appear to customize the parameters. Below, the interface and the parameters that can be adjusted for each customizable option will be displayed</li>
+</ul>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="1-variogram-models">1. <strong>Variogram Models</strong><a href="#1-variogram-models" class="hash-link" aria-label="Direct link to 1-variogram-models" title="Direct link to 1-variogram-models">​</a></h3>
+<p>This section allows for the custom configuration of parameters for each domain. You can adjust the values of the model, threshold, and the three spatial orientation angles, as well as the dimensions of the major, minor, and vertical axes to tailor the analysis to the specific characteristics of the geological domain under study. We will present a quick guide:</p>
+<ol>
+<li>Select the domain you want to configure in the main interface.</li>
+<li>In the section, you will find three options: Structure 1, Structure 2, and Structure 3.</li>
+<li>For each structure you want to adjust, follow the steps below.</li>
+</ol>
+<p>Adjustable Parameters</p>
+<ul>
+<li>For each geological structure within your domain, you can customize the following parameters:</li>
+<li>Model: Choose the geostatistical model that best represents the spatial continuity of your structure. The available options are usually models such as Exponential, Gaussian, among others.</li>
+<li>Sill: Define the threshold value at which the variogram plateaus, representing the total variance.</li>
+<li>Angle 1 (Azimuth): Adjust the direction of maximum horizontal continuity of the structure.</li>
+<li>Angle 2 (Dip): Set the vertical inclination from the horizontal to reflect continuity in depth.</li>
+<li>Angle 3 (Tilt): Modify the orientation of the tilt plane with respect to the major axis.</li>
+<li>Major Axis: Determine the length of the axis of maximum spatial continuity.</li>
+<li>Minor Axis: Specify the length of the axis perpendicular to the major axis within the horizontal plane.</li>
+<li>Vertical Axis: Stipulate the length of the axis perpendicular to the plane formed by the major and minor axes.</li>
+</ul>
+<p>General Instructions</p>
+<ol>
+<li>Each parameter field is editable. Click on the corresponding field to enter the desired value.</li>
+<li>The values can be numeric and in some cases selectable from a predefined list of options.</li>
+<li>Once the values are entered, select &#x27;Save&#x27; or &#x27;Update&#x27; to apply the changes to the structure&#x27;s configuration.</li>
+</ol>
+<div class="theme-admonition theme-admonition-caution admonition_xJq3 alert alert--warning"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg></span>caution</div><div class="admonitionContent_BuS1"><p><strong>Structure is available for optional use and can be omitted if it is not necessary for your analysis.</strong></p></div></div>
+<p>Then saved it, next step is going to customize the Kriging Plan (in case that was selected as customized)</p>
+<p>![][image55]</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="2-kriging-plan">2. <strong>Kriging Plan</strong><a href="#2-kriging-plan" class="hash-link" aria-label="Direct link to 2-kriging-plan" title="Direct link to 2-kriging-plan">​</a></h3>
+<p>Follow this quick guide to customize the parameters across different plans for your domain.</p>
+<p>Configuring Kriging Plans</p>
+<ol>
+<li>
+<p>Selecting the Domain: At the top of the interface, select the domain for which you are creating a kriging plan from the dropdown menu. Each domain may have different geological characteristics, and this tool allows for separate kriging configurations to reflect that diversity.</p>
+</li>
+<li>
+<p>Defining Parameters: Below the domain selection, you will see a table labeled &#x27;Block Model&#x27; followed by your document name, domain, and unit classification. Each column under &#x27;Plan 1&#x27;, &#x27;Plan 2&#x27;, &#x27;Plan 3&#x27;, and &#x27;Plan 4&#x27; represents a different kriging plan for which you can define parameters.</p>
+</li>
+<li>
+<p>Entering Values:</p>
+<ul>
+<li>Major Axis: The primary range of influence for the kriging estimation.</li>
+<li>Semi-Major Axis: The secondary range, perpendicular to the major axis.</li>
+<li>Minor Axis: The tertiary range, usually the vertical component.</li>
+<li>Angle 1: The azimuthal direction of the major axis.</li>
+<li>Angle 2: The dip of the major axis, representing its vertical inclination.</li>
+<li>Angle 3: The tilt of the semi-major axis.</li>
+<li>Min Samples: The minimum number of samples required for a kriging estimate.</li>
+<li>Max Samples: The maximum number of samples to be used in an estimation.</li>
+<li>Max Samples per DH: The maximum number of samples per drill hole to be used.</li>
+</ul>
+</li>
+<li>
+<p>Input Validation: Ensure that the values entered are within acceptable ranges and reflect the spatial characteristics of the domain. The input fields may have validation to prevent erroneous entries.</p>
+</li>
+<li>
+<p>Applying Configurations: After entering your parameters, these settings can be applied to the kriging process, which will affect how the resource estimation is conducted. Make sure to review and save your settings.</p>
+</li>
+</ol>
+<p>Considerations</p>
+<ul>
+<li>Plans that are not being used should be set to zero or left blank.</li>
+</ul>
+<p>Please save your configuration after setting the parameters for each plan. For further assistance, consult the help documentation or reach out to technical support.</p>
+<p>![][image56]</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="3-additional-parameters">3. <strong>Additional Parameters.</strong><a href="#3-additional-parameters" class="hash-link" aria-label="Direct link to 3-additional-parameters" title="Direct link to 3-additional-parameters">​</a></h3>
+<ul>
+<li>Domain Selection: Utilize the dropdown to choose the geological domain for analysis.</li>
+<li>Proportion Inputs: Input fields are provided for entering the distribution percentages of the selected attribute across the chosen domain. These should sum to 100% to represent the full distribution.</li>
+</ul>
+<p>Action Steps:</p>
+<ol>
+<li>Select the appropriate domain or the attribute you need to estimate from the dropdown menus.</li>
+<li>Input the distribution proportions in the provided fields within the &#x27;Units&#x27; section. Ensure their sum equals 100% to accurately reflect the domain&#x27;s complete attribute distribution.</li>
+<li>Once you&#x27;ve filled in the distribution percentages, click &#x27;<strong>Save and continue</strong>&#x27; to lock in your parameters and proceed with the estimation process.</li>
+</ol>
+<p>![][image57]</p>
+<p>You can utilize multiple tools provided by Annapurna to support your decisions.
+Now we will continue with the next Step.</p>
+<p><strong>Step 5: Save and Run</strong></p>
+<ul>
+<li>After making adjustments and selections, save the settings. A window will appear to decide whether to run the estimation domain modeling. Click &quot;Run Instance,&quot; then confirm the action in the popup window.</li>
+<li>You can check the instance&#x27;s status in &quot;Logged.&quot; If you wish to explore other tools offered by Annapurna or start a new instance in another project, this is an available option.</li>
+<li>Once completed, review the report with the parameters adjusted by Annapurna automatically. Additionally, examine the results in 3D projection in the Utilities section and save the visualization link for sharing.</li>
+<li>This instance can be cloned to create a new one based on the automatically calculated parameters and make customized adjustments if needed.</li>
+</ul>
+<p>![][image58]</p>
+<p><strong>Step 6 : Results</strong></p>
+<ul>
+<li>Upon completion of the processing, a new column is generated in the block model database with the resulting information. This column is named after the attribute used for estimation, followed by the estimation method, suffixed with &quot;_Est&quot; to indicate it as estimated.</li>
+<li>Example: For instance, using &quot;CuT&quot; as the attribute and the &quot;Kriging&quot; method, the resulting column would be named &quot;CuT_KK_Est&quot;.</li>
+</ul>
+<div class="theme-admonition theme-admonition-info admonition_xJq3 alert alert--info"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg></span>info</div><div class="admonitionContent_BuS1"><p><strong>In case you apply both tools for domain modeling in the same Block Model, this block model will have additional columns in its datasets, encompassing all the resulting outcomes.</strong></p></div></div></div></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/UserGuideWeb/docs/Workflow_Domain_Modeling/Nearest_Neighbor"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Nearest Neighbor, NN</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/UserGuideWeb/docs/Workflow_Resource_Modeling/Nearest-Neighbor"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Nearest Neighbor, NN</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#automated" class="table-of-contents__link toc-highlight"><strong>Automated</strong></a></li><li><a href="#customized" class="table-of-contents__link toc-highlight"><strong>Customized</strong></a><ul><li><a href="#1-variogram-models" class="table-of-contents__link toc-highlight">1. <strong>Variogram Models</strong></a></li><li><a href="#2-kriging-plan" class="table-of-contents__link toc-highlight">2. <strong>Kriging Plan</strong></a></li><li><a href="#3-additional-parameters" class="table-of-contents__link toc-highlight">3. <strong>Additional Parameters.</strong></a></li></ul></li></ul></div></div></div></div></main></div></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="col footer__col"><div class="footer__title">Docs</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://www.apmodtech.com/Publications/Articles" target="_blank" rel="noopener noreferrer" class="footer__link-item">Lectur More</a></li><li class="footer__item"><a href="https://julianmortiz.com/articles" target="_blank" rel="noopener noreferrer" class="footer__link-item">Specific Reading<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li></ul></div><div class="col footer__col"><div class="footer__title">More</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://www.apmodtech.com/" target="_blank" rel="noopener noreferrer" class="footer__link-item">Web Site<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a href="https://app.apmodtech.com/" target="_blank" rel="noopener noreferrer" class="footer__link-item">Platform<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2024 Annapurna™ Resources.</div></div></div></footer></div>
+</body>
+</html>

@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-Elements/Point" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.6.3">
+<title data-rh="true">Point | Annapurna™ Resource</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://NicoAvalos.github.io/UserGuideWeb/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://NicoAvalos.github.io/UserGuideWeb/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://NicoAvalos.github.io/UserGuideWeb/docs/Elements/Point"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Point | Annapurna™ Resource"><meta data-rh="true" name="description" content="Consider a database composed of elements containing spatial variables X, Y, Z. This specific location can be accompanied by numerical and/or categorical values assigned to that point. This information can be imported, and furthermore, later visualized and utilized for various operations. For example, the point database can be manipulated with filters, calculations, recalculations, modifications, rotations, grouping, or deselection of information, all projected in 3D and/or graphically."><meta data-rh="true" property="og:description" content="Consider a database composed of elements containing spatial variables X, Y, Z. This specific location can be accompanied by numerical and/or categorical values assigned to that point. This information can be imported, and furthermore, later visualized and utilized for various operations. For example, the point database can be manipulated with filters, calculations, recalculations, modifications, rotations, grouping, or deselection of information, all projected in 3D and/or graphically."><link data-rh="true" rel="icon" href="https://www.apmodtech.com/static/images/apmt/APMT_H_tablet.png"><link data-rh="true" rel="canonical" href="https://NicoAvalos.github.io/UserGuideWeb/docs/Elements/Point"><link data-rh="true" rel="alternate" href="https://NicoAvalos.github.io/UserGuideWeb/docs/Elements/Point" hreflang="en"><link data-rh="true" rel="alternate" href="https://NicoAvalos.github.io/UserGuideWeb/docs/Elements/Point" hreflang="x-default"><link rel="stylesheet" href="/UserGuideWeb/assets/css/styles.e5e8328c.css">
+<script src="/UserGuideWeb/assets/js/runtime~main.be6fb6de.js" defer="defer"></script>
+<script src="/UserGuideWeb/assets/js/main.19e9459c.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const n=new URLSearchParams(window.location.search).entries();for(var[t,e]of n)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="navbar navbar--fixed-top"><div class="navbar__inner"><div class="navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/UserGuideWeb/"><div class="navbar__logo"><img src="/UserGuideWeb/img/apmt.png" alt="My Site Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/UserGuideWeb/img/apmt.png" alt="My Site Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">General Introduction</b></a><a class="navbar__item navbar__link" href="/UserGuideWeb/docs/Workflow_Domain_Modeling/Nearest_Neighbor">Workflows</a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/UserGuideWeb/docs/Elements/Topography_and_Meshes">Elements</a><a class="navbar__item navbar__link" href="/UserGuideWeb/docs/Analysis/intro">Analysis</a><a class="navbar__item navbar__link" href="/UserGuideWeb/docs/Utilities">Visualization</a></div><div class="navbar__items navbar__items--right"><a class="navbar__item navbar__link" href="/UserGuideWeb/docs/General_Introduction/support">Support</a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="Switch between dark and light mode (currently light mode)" aria-label="Switch between dark and light mode (currently light mode)" aria-live="polite" aria-pressed="false"><svg viewBox="0 0 24 24" width="24" height="24" class="lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" class="darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" role="button" aria-expanded="true" href="/UserGuideWeb/docs/Elements/Topography_and_Meshes">Elements</a></div><ul style="display:block;overflow:visible;height:auto" class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/UserGuideWeb/docs/Elements/Topography_and_Meshes">Topography and Meshes</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/UserGuideWeb/docs/Elements/Drill-Hole">Drill-Hole</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/UserGuideWeb/docs/Elements/Point">Point</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/UserGuideWeb/docs/Elements/Block-Model">Block Model</a></li></ul></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs" itemscope="" itemtype="https://schema.org/BreadcrumbList"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/UserGuideWeb/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><span class="breadcrumbs__link">Elements</span><meta itemprop="position" content="1"></li><li itemscope="" itemprop="itemListElement" itemtype="https://schema.org/ListItem" class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link" itemprop="name">Point</span><meta itemprop="position" content="2"></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>Point</h1></header>
+<p>Consider a database composed of elements containing spatial variables X, Y, Z. This specific location can be accompanied by numerical and/or categorical values assigned to that point. This information can be imported, and furthermore, later visualized and utilized for various operations. For example, the point database can be manipulated with filters, calculations, recalculations, modifications, rotations, grouping, or deselection of information, all projected in 3D and/or graphically.</p>
+<p>It is important to highlight that this section facilitates ongoing work with the project database of drilling campaigns. This implies that when georeferencing methods are applied to the DrillHole information within the DrillHole task tree, the rows in these files containing positional data provided by the X, Y, Z columns (for both top, mid, and bot) can be manipulated as points within this section. Consequently, these files are applicable within this workflow.</p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="import-2"><strong>Import</strong><a href="#import-2" class="hash-link" aria-label="Direct link to import-2" title="Direct link to import-2">​</a></h2>
+<p>The <strong>Import</strong> process in the Point Section allows users to integrate point datasets into the platform efficiently. This simplified workflow ensures an intuitive process for importing and managing point data within your projects.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="step-by-step-import-process"><strong>Step-by-Step Import Process</strong><a href="#step-by-step-import-process" class="hash-link" aria-label="Direct link to step-by-step-import-process" title="Direct link to step-by-step-import-process">​</a></h3>
+<ol>
+<li><strong>Upload the Point Data File</strong>
+<ul>
+<li>Select and upload the point data file in <strong>CSV</strong> or <strong>ZIP</strong> format.</li>
+<li>ZIP format is recommended for faster uploads, especially for large datasets.</li>
+<li>Ensure the data is clean and properly structured to avoid import errors.</li>
+</ul>
+</li>
+<li><strong>Specify the Header and Data Rows</strong>
+<ul>
+<li>Indicate the row where the header is located (e.g., row 1).</li>
+<li>Specify the starting row for the data (e.g., row 2).</li>
+<li>This ensures the system correctly identifies column names and data entries.</li>
+</ul>
+</li>
+<li><strong>Assign Attributes to Columns</strong>
+<ul>
+<li>After the file is uploaded, assign each column to the appropriate attribute type from the following options:<!-- -->
+<ul>
+<li><strong>Easting</strong> (X-coordinate).</li>
+<li><strong>Northing</strong> (Y-coordinate).</li>
+<li><strong>Elevation</strong> (Z-coordinate).</li>
+<li><strong>Numerical</strong> (numerical data like grades or densities).</li>
+<li><strong>Categorical</strong> (for values like lithology or rock type).</li>
+<li><strong>No Import</strong> (exclude unnecessary columns).</li>
+</ul>
+</li>
+<li>You can use the <strong>Data Table View</strong> tab to preview the dataset and ensure proper mapping of columns and rows.</li>
+</ul>
+</li>
+<li><strong>Handle Missing Values</strong>
+<ul>
+<li>Configure placeholders for missing data where applicable:<!-- -->
+<ul>
+<li>For <strong>Numerical</strong> columns, assign a value like -99 to indicate missing entries.</li>
+<li>For <strong>Categorical</strong> columns, use a placeholder like &quot;unknown&quot; to label undefined values.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Finalize the Import</strong>
+<ul>
+<li>Once all attributes are assigned, finalize the import to integrate the dataset into the platform.</li>
+<li>The imported points will now be available for visualization and analysis.</li>
+</ul>
+</li>
+</ol>
+<p>Tips for a Successful Import</p>
+<ul>
+<li><strong>Clean the Dataset</strong>: Ensure the file is properly formatted and all necessary columns are included before importing.</li>
+<li><strong>Data Table View</strong>: Use this feature to cross-check the dataset structure during the attribute assignment phase.</li>
+<li><strong>Optional Columns</strong>: Exclude unnecessary columns by selecting &quot;No Import&quot; to streamline your dataset.</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="export-1"><strong>Export</strong><a href="#export-1" class="hash-link" aria-label="Direct link to export-1" title="Direct link to export-1">​</a></h2>
+<p>This section allows exporting specific columns from a point file, but also with the application or non-application of any filters. This enables you to have CSV files at your disposal with clean-ups, modifications, recalculations, or any type of operation applied within the platform.</p>
+<ol>
+<li>
+<p><strong>Dataset Selection</strong></p>
+<p>Choose the Type of Data:</p>
+<ul>
+<li>In the &#x27;Point&#x27; dropdown menu, select the type of data you wish to work with. This will determine which dataset you will be filtering and exporting.
+Apply a Filter if needed:</li>
+<li>Use the dropdown menu to apply a filter to your dataset. You can choose &#x27;No filter&#x27; to work with the dataset as it is, or select some filter created for your dataset if you want to apply specific filters to categorical or numerical attributes.</li>
+</ul>
+</li>
+<li>
+<p><strong>Select Attributes</strong></p>
+<p>Choose Categorical Attributes:</p>
+<ul>
+<li>Here you can select the attributes that are categorical in nature by checking the boxes next to each attribute. For instance, &#x27;Lit&#x27; is checked, meaning it will be included in your export.
+Choose Numerical Attributes:</li>
+<li>In the &#x27;Numerical attributes&#x27; section on the right, check the boxes next to the numerical data you wish to export, such as &#x27;Easting&#x27;, &#x27;Northing&#x27;, &#x27;Elevation&#x27;, &#x27;Cu&#x27;, &#x27;Length&#x27;.</li>
+</ul>
+</li>
+<li>
+<p><strong>Export the Data</strong></p>
+<ul>
+<li>After selecting all the necessary attributes, click the &#x27;Export&#x27; button at the bottom of the interface.</li>
+<li>A file will be created with your selected data, which you can then save to a specified directory on your device for further analysis or use.</li>
+</ul>
+</li>
+</ol>
+<p>This interface provides a customizable way to select specific data points from a larger dataset, allowing for efficient data management and export for practical use in various applications, including 3D projections and graphical analysis</p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="manage-1"><strong>Manage</strong><a href="#manage-1" class="hash-link" aria-label="Direct link to manage-1" title="Direct link to manage-1">​</a></h2>
+<p>The <strong>Point Manager</strong> section is designed to handle individual spatial data points, such as survey points, control points, or other georeferenced data. These points are typically used as input for modeling or spatial analysis in various workflows.</p>
+<p>Key Features</p>
+<ol>
+<li><strong>Viewing and Organizing</strong>
+<ul>
+<li>Displays a list of all imported point datasets.</li>
+<li>Includes attributes such as the <strong>name</strong>, <strong>creation date</strong>, and <strong>size</strong>, helping users keep track of their data.</li>
+<li>Allows sorting and grouping for better organization.</li>
+</ul>
+</li>
+<li><strong>Renaming</strong>
+<ul>
+<li>Enables users to rename datasets directly, ensuring meaningful and descriptive names for easy identification.</li>
+</ul>
+</li>
+<li><strong>Exporting</strong>
+<ul>
+<li>Datasets can be exported as <strong>CSV files</strong>, retaining the same name as the dataset for clarity.</li>
+<li>Exported files are structured to include spatial coordinates (e.g., X, Y, Z as Easting, Northing, Elevation) and other associated attributes.</li>
+</ul>
+</li>
+<li><strong>Deleting</strong>
+<ul>
+<li>Permanently removes datasets from the workspace.</li>
+<li><strong>Caution</strong>: This action is irreversible.</li>
+</ul>
+</li>
+</ol>
+<p>Example: CSV Download</p>
+<p>If a point dataset is named <strong>ControlPoints_2024, exporting it will generate a file named ControlPoints_2024.csv.</strong> The CSV file typically includes columns like:</p>
+<ul>
+<li><strong>ID</strong></li>
+<li><strong>X</strong>, <strong>Y</strong>, <strong>Z</strong> coordinates</li>
+<li><strong>Attribute values</strong></li>
+</ul>
+<p><strong>Note:</strong> In the <strong>Properties and Edit</strong> section, you can view, modify, and manage various attributes or columns of the dataset. Additionally, you can create new attributes using <strong>Calculated</strong> fields and customize the content for export through a tailored download.</p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="properties-1"><strong>Properties</strong><a href="#properties-1" class="hash-link" aria-label="Direct link to properties-1" title="Direct link to properties-1">​</a></h2>
+<p>It is a simple and direct view of the information contained in the selected file. It displays all columns and the first 100 to 1000 rows of the file. Future applications will be added to this section, so suggestions can be communicated in the support section and will be well received.</p>
+<ol>
+<li><strong>Accessing the Dataset:</strong>
+<ul>
+<li>Expand the &quot;Point Dataset&quot; menu to view the list of available databases.</li>
+<li>Select the database you wish to visualize from this list.</li>
+</ul>
+</li>
+<li><strong>Viewing the Data:</strong>
+<ul>
+<li>Once the dataset is loaded, the information will be displayed directly in the windows located at the lower part of the interface.</li>
+</ul>
+</li>
+</ol>
+<p>Note: The displayed data cannot be edited.</p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="edit"><strong>Edit</strong><a href="#edit" class="hash-link" aria-label="Direct link to edit" title="Direct link to edit">​</a></h2>
+<p>In particular, this section serves for reporting errors or adjusting the information according to your preferences, enabling modification of both the variable type assigned to the column and its header (name).</p>
+<p>In the &quot;Edit Points Dataset&quot; section, you have the flexibility to manage the structure of your data:</p>
+<ol>
+<li>
+<p><strong>Selecting the Dataset:</strong></p>
+<ul>
+<li>From the dropdown menu, choose &#x27;Point&#x27; to select the Points dataset you wish to edit.</li>
+</ul>
+</li>
+<li>
+<p><strong>Modifying Column Information:</strong></p>
+</li>
+</ol>
+<p>The table displayed allows you to make adjustments to your dataset&#x27;s columns:</p>
+<ul>
+<li><strong>Original Name:</strong> Shows the current name of the data column.</li>
+<li><strong>New Name:</strong> If necessary, type a new name for the column to better reflect the data it contains.</li>
+<li><strong>Data Type:</strong> Choose the correct data type (e.g., Numerical or Categorical) from the dropdown menu for each column to ensure data integrity.</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="rotate"><strong>Rotate</strong><a href="#rotate" class="hash-link" aria-label="Direct link to rotate" title="Direct link to rotate">​</a></h2>
+<p>You have the capability to apply spatial rotations to a specific dataset of points. Here’s a step by step guide:</p>
+<ol>
+<li><strong>Select Dataset:</strong> Begin by choosing the dataset containing the points you want to rotate.</li>
+<li><strong>Specify Rotations:</strong> After selecting the dataset, you can specify the desired rotations along the X and Y axes. This means you can determine how much the dataset should be rotated horizontally (X-axis) and vertically (Y-axis).</li>
+<li><strong>Execute Rotation</strong>: Once you&#x27;ve specified the rotations, execute the rotation. This action will generate new columns labeled Orig_X and Orig_Y, containing the original coordinates of the dataset.</li>
+<li><strong>Preservation of Data:</strong> The creation of Orig_X and Orig_Y columns ensures that the original data is preserved while providing the rotational information in the form of new East and North coordinates. The elevation data remains intact throughout this process.</li>
+<li><strong>Single Rotation Limitation:</strong> It&#x27;s important to note that you can only apply the rotation to the file once. If you initiate a new rotation, the East and North columns will be overwritten. The Orig_X and Orig_Y coordinates serve as reference points for the new rotation.</li>
+<li><strong>Performing Multiple Rotations:</strong> If you wish to perform multiple rotations, such as rotating once and then initiating subsequent rotations from the newly adjusted coordinates, you&#x27;ll need to modify the names of the Orig_X and Orig_Y columns in the &quot;Edit&quot; section. For example, you might relabel them as X1 and Y1, respectively. This allows any new rotation to be applied to the updated East and North coordinates (after the first rotation), and the results will be stored in new Orig_X and Orig_Y columns. This process yields the resulting East and North coordinates after the second rotation.</li>
+<li><strong>Filtering Data:</strong> After rotation, you can filter the information. The rows from the rotation-related columns will also be taken into account based on the filter you apply.</li>
+</ol>
+<p>By following these steps, you can effectively apply spatial rotations to your dataset of points and manage the resulting data accordingly.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="snap-to-grid"><strong>Snap to grid</strong><a href="#snap-to-grid" class="hash-link" aria-label="Direct link to snap-to-grid" title="Direct link to snap-to-grid">​</a></h2>
+<p>The <strong>Snap to Grid</strong> tool allows users to align a points dataset to a regular grid, creating a structured dataset that follows the defined grid properties. This process reassigns the <strong>Easting</strong>, <strong>Northing</strong>, and <strong>Elevation</strong> coordinates to the nearest grid point without creating additional points.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="step-by-step-workflow"><strong>Step-by-step workflow</strong><a href="#step-by-step-workflow" class="hash-link" aria-label="Direct link to step-by-step-workflow" title="Direct link to step-by-step-workflow">​</a></h3>
+<ol>
+<li><strong>Select the Points Dataset</strong>
+<ul>
+<li>From the dropdown menu, choose the points dataset to be used.</li>
+<li>Ensure that the dataset has already been imported and is available within the current project.</li>
+</ul>
+</li>
+<li><strong>Define the Regular Grid</strong>
+<ul>
+<li>Provide the grid dimensions by specifying the following:<!-- -->
+<ul>
+<li><strong>Number of blocks</strong>: Set the total number of divisions along the Easting, Northing, and Elevation axes.</li>
+<li><strong>Origin</strong>: Define the starting point (bottom-left corner) of the grid.</li>
+<li><strong>Block size</strong>: Assign the size of each block along each axis.</li>
+</ul>
+</li>
+<li>Make sure the grid dimensions respect the licensing restrictions on the maximum number of blocks.</li>
+</ul>
+</li>
+<li><strong>Handle Duplicates</strong>
+<ul>
+<li>Use the dropdown menu to decide whether to <strong>Remove duplicates after migration</strong>:<!-- -->
+<ul>
+<li><strong>Yes</strong>: Removes duplicate points that are assigned to the same grid node after snapping.</li>
+<li><strong>No</strong>: Retains all points, including duplicates.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Apply Snap to Grid</strong>
+<ul>
+<li>Once all settings are configured, click the <strong>Snap to Grid</strong> button at the bottom of the interface.</li>
+<li>The system will align the dataset to the nearest grid points based on the provided grid definition.</li>
+</ul>
+</li>
+</ol>
+<p>The original coordinates from the points dataset will be preserved in new columns named: <strong>Easting_before_STG, Northing_before_STG, Elevation_before_STG.</strong></p>
+<div class="theme-admonition theme-admonition-info admonition_xJq3 alert alert--info"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg></span>info</div><div class="admonitionContent_BuS1"><ul>
+<li>The grid’s origin refers to the center of the block located at the bottom-left corner of the grid.</li>
+<li>Ensure that the dataset&#x27;s grid definition aligns with your project requirements and licensing limitations.</li>
+<li>Removing duplicates is optional and depends on the specific needs of your workflow.</li>
+</ul></div></div>
+<p>This process ensures that point data is structured and ready for integration with block models or further analysis.</p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="calculate"><strong>Calculate</strong><a href="#calculate" class="hash-link" aria-label="Direct link to calculate" title="Direct link to calculate">​</a></h2>
+<p>This tutorial will walk you through the process of using numerical and conditional expressions to compute new data columns, focusing on generating new attributes in your dataset from operations and calculations performed on and between existing columns.</p>
+<p>The first step is to select the project, the database, with which you will be working, or in other words, the Point dataset.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="numerical-expressions"><strong>Numerical Expressions</strong><a href="#numerical-expressions" class="hash-link" aria-label="Direct link to numerical-expressions" title="Direct link to numerical-expressions">​</a></h3>
+<p>To calculate new numerical values based on existing data, we use numerical expressions. These expressions allow you to perform arithmetic operations directly in Pandas.</p>
+<ul>
+<li><strong>How to Use:</strong> Simply type your numerical expression into the &#x27;Condition&#x27; field when adding a new attribute. Use standard arithmetic operators like <strong>+</strong> (addition), <strong>-</strong> (subtraction), <strong>*</strong> (multiplication), <strong>/</strong> (division), and <strong>**</strong> (exponentiation). You can also include Numpy functions and constants in these expressions for more complex calculations.</li>
+<li><strong>Important Note:</strong> Always include the dataframe reference df when using column names in your expressions.</li>
+</ul>
+<p>Example 1: To scale a column named &#x27;cus&#x27; by 100 and then divide by the column &#x27;cut&#x27; increased by 0.0001, you would enter 100*df[&#x27;cus&#x27;]/(df[&#x27;cut&#x27;] + 0.0001).</p>
+<p>Example 2: For a calculation involving Numpy&#x27;s constant pi and a column named &#x27;length&#x27;, the expression would be 4/3*np.pi*df[&#x27;length&#x27;]**3.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="conditional-expressions"><strong>Conditional Expressions</strong><a href="#conditional-expressions" class="hash-link" aria-label="Direct link to conditional-expressions" title="Direct link to conditional-expressions">​</a></h3>
+<p>Conditional expressions are used to create new columns based on conditions. These are written using apply() and lambda functions in Pandas.</p>
+<ul>
+<li><strong>How to Use:</strong> Type the condition directly into the &#x27;Condition&#x27; field. This will implicitly create a lambda function that applies your condition to each row in the dataframe.</li>
+<li><strong>Important Note:</strong> Use row to reference individual row values in your conditional expressions.</li>
+</ul>
+<p>Example 1: To assign a value based on the contents of the &#x27;Ue&#x27; column, enter: &quot;IN&quot; if row[&#x27;Ue&#x27;] in (0,1) else &quot;MIDDLE&quot; if row[&#x27;Ue&#x27;] == 8 else &quot;OUT&quot;.</p>
+<p>Example 2: To categorize rows based on the &#x27;Litho&#x27; and &#x27;FrnE&#x27; columns, the condition would be: &quot;IN&quot; if row[&#x27;Litho&#x27;] in (&#x27;FrLm&#x27;,&#x27;FrNE&#x27;) else &quot;MIDDLE&quot; if row[&#x27;Litho&#x27;] == &quot;OX&quot; else &quot;OUT&quot;.</p>
+<p>Applying Your Expressions: Once you&#x27;ve entered your custom attribute name, chosen the data type, and typed in your condition, simply click on the &#x27;Add new attribute&#x27; button. This will add the new computed column to your dataframe based on the expressions you&#x27;ve provided.</p>
+<p>Final Tips</p>
+<ul>
+<li>Always ensure your expressions are syntactically correct to avoid errors.</li>
+<li>Refer to the official Pandas documentation for more detailed information on functions and syntax.</li>
+<li>Experiment with simple expressions first before moving on to more complex computations.</li>
+</ul>
+<p>By following this guide, you should be able to enhance your data analysis by adding new, dynamically computed attributes to your Pandas dataframe with ease.</p>
+<p><em>Note: These notes are also referenced in the Calculate section for &#x27;Block Models.&#x27; This is because both the Points and Blocks sections of the workflow feature a designated area for performing calculations. In both cases, the mathematical construction follows the same guidelines and parameters.</em></p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="filters"><strong>Filters</strong><a href="#filters" class="hash-link" aria-label="Direct link to filters" title="Direct link to filters">​</a></h2>
+<p>When using filters, we implicitly utilize the Query function from the Pandas library. You write a condition as a string. You can use logical operators such as and, or, and not, as well as comparison operators like &gt;, &lt;, &gt;=, &lt;=, ==, and !=. You can reference column names directly without having to use[&#x27;column_name&#x27;] syntax within the query string. The use of parentheses can be helpful when we want to specify different operations grouped within the string.</p>
+<p>Another important aspect is when to use quotes. We will explain two case:</p>
+<ol>
+<li>
+<p><strong>Column Identifiers:</strong> In the context of querying a data structure, when you reference the names of columns, you usually don’t need to use quotes if these names follow the conventions of the language or environment you&#x27;re working with. For example, if column names cannot contain spaces or special characters and must not clash with reserved keywords, then a plain, unquoted identifier is sufficient.</p>
+</li>
+<li>
+<p><strong>String Literals:</strong> Conversely, when your query needs to match specific text within a column, that text should be enclosed in quotes. This tells the system you’re looking for an exact sequence of characters, not a column or another type of identifier. So, &#x27;Unit 1&#x27; in quotes signifies it’s a literal string to be matched in the data, not a reference to another column or entity.</p>
+</li>
+</ol>
+<p>We will explain the examples presented on the platform.</p>
+<p><strong>For example 1:</strong> The condition is (Numerical_Attribute &gt; 30) and ((Categorical_Attribute == &#x27;Unit 1&#x27;) or (Categorical_Attribute == &#x27;Unit 2&#x27;)). This means that you want to select rows where the &#x27;Numerical_Attribute&#x27; column has a value greater than 30, and at the same time, the &#x27;Categorical_Attribute&#x27; column must be either &#x27;Unit 1&#x27; or &#x27;Unit 2&#x27;.</p>
+<p><strong>For example 2:</strong> The condition is &#x27;Unit_3&#x27;, &#x27;Unit_7&#x27; not in Categorical_Attribute.<br>
+<!-- -->This means you want to exclude rows where the &#x27;Categorical_Attribute&#x27; is either &#x27;Unit_3&#x27; or &#x27;Unit_7&#x27;.</p>
+<div class="theme-admonition theme-admonition-info admonition_xJq3 alert alert--info"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg></span>info</div><div class="admonitionContent_BuS1"><p>These notes are also mentioned in the Filters section for &#x27;Block Models.&#x27; This is because both the Points and Blocks sections of the workflow have a dedicated area for applying filters. In both instances, the filter construction adheres to the same guidelines and parameters.*</p></div></div></div></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/UserGuideWeb/docs/Elements/Drill-Hole"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Drill-Hole</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/UserGuideWeb/docs/Elements/Block-Model"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Block Model</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#import-2" class="table-of-contents__link toc-highlight"><strong>Import</strong></a><ul><li><a href="#step-by-step-import-process" class="table-of-contents__link toc-highlight"><strong>Step-by-Step Import Process</strong></a></li></ul></li><li><a href="#export-1" class="table-of-contents__link toc-highlight"><strong>Export</strong></a></li><li><a href="#manage-1" class="table-of-contents__link toc-highlight"><strong>Manage</strong></a></li><li><a href="#properties-1" class="table-of-contents__link toc-highlight"><strong>Properties</strong></a></li><li><a href="#edit" class="table-of-contents__link toc-highlight"><strong>Edit</strong></a></li><li><a href="#rotate" class="table-of-contents__link toc-highlight"><strong>Rotate</strong></a></li><li><a href="#snap-to-grid" class="table-of-contents__link toc-highlight"><strong>Snap to grid</strong></a><ul><li><a href="#step-by-step-workflow" class="table-of-contents__link toc-highlight"><strong>Step-by-step workflow</strong></a></li></ul></li><li><a href="#calculate" class="table-of-contents__link toc-highlight"><strong>Calculate</strong></a><ul><li><a href="#numerical-expressions" class="table-of-contents__link toc-highlight"><strong>Numerical Expressions</strong></a></li><li><a href="#conditional-expressions" class="table-of-contents__link toc-highlight"><strong>Conditional Expressions</strong></a></li></ul></li><li><a href="#filters" class="table-of-contents__link toc-highlight"><strong>Filters</strong></a></li></ul></div></div></div></div></main></div></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="col footer__col"><div class="footer__title">Docs</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://www.apmodtech.com/Publications/Articles" target="_blank" rel="noopener noreferrer" class="footer__link-item">Lectur More</a></li><li class="footer__item"><a href="https://julianmortiz.com/articles" target="_blank" rel="noopener noreferrer" class="footer__link-item">Specific Reading<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li></ul></div><div class="col footer__col"><div class="footer__title">More</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://www.apmodtech.com/" target="_blank" rel="noopener noreferrer" class="footer__link-item">Web Site<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a href="https://app.apmodtech.com/" target="_blank" rel="noopener noreferrer" class="footer__link-item">Platform<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2024 Annapurna™ Resources.</div></div></div></footer></div>
+</body>
+</html>

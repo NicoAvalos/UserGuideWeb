@@ -1,0 +1,432 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-Elements/Block-Model" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.6.3">
+<title data-rh="true">**Block Models** | Annapurna™ Resource</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://NicoAvalos.github.io/UserGuideWeb/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://NicoAvalos.github.io/UserGuideWeb/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://NicoAvalos.github.io/UserGuideWeb/docs/Elements/Block-Model"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="**Block Models** | Annapurna™ Resource"><meta data-rh="true" name="description" content="block-models}"><meta data-rh="true" property="og:description" content="block-models}"><link data-rh="true" rel="icon" href="https://www.apmodtech.com/static/images/apmt/APMT_H_tablet.png"><link data-rh="true" rel="canonical" href="https://NicoAvalos.github.io/UserGuideWeb/docs/Elements/Block-Model"><link data-rh="true" rel="alternate" href="https://NicoAvalos.github.io/UserGuideWeb/docs/Elements/Block-Model" hreflang="en"><link data-rh="true" rel="alternate" href="https://NicoAvalos.github.io/UserGuideWeb/docs/Elements/Block-Model" hreflang="x-default"><link rel="stylesheet" href="/UserGuideWeb/assets/css/styles.e5e8328c.css">
+<script src="/UserGuideWeb/assets/js/runtime~main.be6fb6de.js" defer="defer"></script>
+<script src="/UserGuideWeb/assets/js/main.19e9459c.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const n=new URLSearchParams(window.location.search).entries();for(var[t,e]of n)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="navbar navbar--fixed-top"><div class="navbar__inner"><div class="navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/UserGuideWeb/"><div class="navbar__logo"><img src="/UserGuideWeb/img/apmt.png" alt="My Site Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/UserGuideWeb/img/apmt.png" alt="My Site Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">General Introduction</b></a><a class="navbar__item navbar__link" href="/UserGuideWeb/docs/Workflow_Domain_Modeling/Nearest_Neighbor">Workflows</a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/UserGuideWeb/docs/Elements/Topography_and_Meshes">Elements</a><a class="navbar__item navbar__link" href="/UserGuideWeb/docs/Analysis/intro">Analysis</a><a class="navbar__item navbar__link" href="/UserGuideWeb/docs/Utilities">Visualization</a></div><div class="navbar__items navbar__items--right"><a class="navbar__item navbar__link" href="/UserGuideWeb/docs/General_Introduction/support">Support</a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="Switch between dark and light mode (currently light mode)" aria-label="Switch between dark and light mode (currently light mode)" aria-live="polite" aria-pressed="false"><svg viewBox="0 0 24 24" width="24" height="24" class="lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" class="darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" role="button" aria-expanded="true" href="/UserGuideWeb/docs/Elements/Topography_and_Meshes">Elements</a></div><ul style="display:block;overflow:visible;height:auto" class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/UserGuideWeb/docs/Elements/Topography_and_Meshes">Topography and Meshes</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/UserGuideWeb/docs/Elements/Drill-Hole">Drill-Hole</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/UserGuideWeb/docs/Elements/Point">Point</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/UserGuideWeb/docs/Elements/Block-Model">Block Model</a></li></ul></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs" itemscope="" itemtype="https://schema.org/BreadcrumbList"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/UserGuideWeb/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><span class="breadcrumbs__link">Elements</span><meta itemprop="position" content="1"></li><li itemscope="" itemprop="itemListElement" itemtype="https://schema.org/ListItem" class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link" itemprop="name">Block Model</span><meta itemprop="position" content="2"></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1><strong>Block Models</strong></h1></header>
+<p>The <strong>Block Models</strong> section enables you to create and manage block models by importing your database. These models allow you to organize and visualize mining project data, with the added capability to view them in 3D. If you have existing projects in the <strong>DrillHole</strong> or <strong>Point</strong> sections, the CSV files you’ve generated and exported can be imported here to construct a block model from that data.</p>
+<p>This section offers a wide range of functionalities, from directly building block models based on your project information (specifying properties like block count, spacing, and origin) to performing advanced operations such as calculations, filters, flagging, geostatistical analysis, estimation, and simulations. Whether you&#x27;re working on basic tasks or complex analyses, this section is designed to support your workflow comprehensively.</p>
+<p>Given the integration of block models with the <strong>Analysis</strong> section, maintaining good organization within your projects is essential. Each block model you create is tied to its respective project, ensuring that calculations, filters, and operations remain independent and well-structured. The interface allows you to manage multiple block models simultaneously, providing flexibility for diverse project requirements.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="features-and-considerations"><strong>Features and considerations</strong><a href="#features-and-considerations" class="hash-link" aria-label="Direct link to features-and-considerations" title="Direct link to features-and-considerations">​</a></h2>
+<ul>
+<li>The workflow is designed to be <strong>direct</strong>, <strong>quick</strong>, <strong>fluid</strong>, <strong>semi-intuitive</strong>, and <strong>highly effective</strong>.</li>
+<li>All decisions regarding criteria, properties, and characteristics of your block models are saved, ensuring continuity and traceability.</li>
+<li><strong>Block Limit</strong>: Block models are currently limited to current licence<strong>s</strong>. If this limit is exceeded, the system will notify you with an error message.<!-- -->
+<ul>
+<li><strong>Note</strong>: For projects that require models beyond this capacity, please contact support or the development team for alternative solutions.</li>
+</ul>
+</li>
+</ul>
+<p>By leveraging this section, you can effectively construct, manage, and analyze block models tailored to your mining projects. Proper planning and organization are key to maximizing the potential of the tools provided</p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="import-3"><strong>Import</strong><a href="#import-3" class="hash-link" aria-label="Direct link to import-3" title="Direct link to import-3">​</a></h2>
+<p>To generate a block model, the first step involves importing data from a CSV or ZIP file. Using ZIP files is recommended for faster upload speeds. Below is a step-by-step guide to the import process:</p>
+<p><strong>Import Process</strong></p>
+<ol>
+<li><strong>Upload the Block Model File</strong>
+<ul>
+<li>Select and upload the block model file in CSV or ZIP format.</li>
+<li>Ensure the data is clean and properly structured, format, for accurate processing.</li>
+</ul>
+</li>
+<li><strong>Choose the Block Model Type</strong>
+<ul>
+<li>Decide whether the model to be imported is:<!-- -->
+<ul>
+<li><strong>Regular</strong>: Composed of blocks with uniform sizes.</li>
+<li><strong>Irregular (Sub-Cell)</strong>: Includes blocks with varying sizes for detailed modeling.</li>
+</ul>
+</li>
+<li>Selecting the correct structure is crucial to ensure accurate representation of the model.</li>
+</ul>
+</li>
+<li><strong>Specify the Header and Data Rows</strong>
+<ul>
+<li>Indicate the row where the header is located (e.g., row 1).</li>
+<li>Specify the starting row for the data (e.g., row 2).</li>
+<li>This ensures the system correctly identifies column names and data entries.</li>
+</ul>
+</li>
+<li><strong>Select Variables to Import</strong>
+<ul>
+<li>Assign the relevant columns in the dataset to corresponding data types, such as:<!-- -->
+<ul>
+<li><strong>Easting, Northing, and Elevation coordinates</strong> (mandatory).</li>
+<li>Block dimensions: <strong>xsize, ysize, zsize</strong> (if applicable).</li>
+<li>Additional variables (numerical or categorical).</li>
+</ul>
+</li>
+<li>Handle missing values:<!-- -->
+<ul>
+<li>Assign a placeholder value (e.g., -99 for numerical data or &quot;unknown&quot; for categorical data).</li>
+</ul>
+</li>
+<li>Use the <strong>Data Table View</strong> tab to preview the dataset, helping ensure columns and rows are mapped correctly.</li>
+</ul>
+</li>
+<li><strong>Rotation Check</strong>
+<ul>
+<li>Before finalizing, decide whether to:<!-- -->
+<ul>
+<li><strong>Rotate the Block Model</strong>: Specify the rotation point (Easting and Northing) and the azimuth angle. Original coordinates will be preserved under the columns &quot;Orig_X&quot; and &quot;Orig_Y&quot;.</li>
+<li><strong>Proceed without Rotation</strong>: Import the model as is, aligned to its current coordinates.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="tips-for-successful-import"><strong>Tips for Successful Import</strong><a href="#tips-for-successful-import" class="hash-link" aria-label="Direct link to tips-for-successful-import" title="Direct link to tips-for-successful-import">​</a></h3>
+<div class="theme-admonition theme-admonition-tip admonition_xJq3 alert alert--success"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 12 16"><path fill-rule="evenodd" d="M6.5 0C3.48 0 1 2.19 1 5c0 .92.55 2.25 1 3 1.34 2.25 1.78 2.78 2 4v1h5v-1c.22-1.22.66-1.75 2-4 .45-.75 1-2.08 1-3 0-2.81-2.48-5-5.5-5zm3.64 7.48c-.25.44-.47.8-.67 1.11-.86 1.41-1.25 2.06-1.45 3.23-.02.05-.02.11-.02.17H5c0-.06 0-.13-.02-.17-.2-1.17-.59-1.83-1.45-3.23-.2-.31-.42-.67-.67-1.11C2.44 6.78 2 5.65 2 5c0-2.2 2.02-4 4.5-4 1.22 0 2.36.42 3.22 1.19C10.55 2.94 11 3.94 11 5c0 .66-.44 1.78-.86 2.48zM4 14h5c-.23 1.14-1.3 2-2.5 2s-2.27-.86-2.5-2z"></path></svg></span>tip</div><div class="admonitionContent_BuS1"><ul>
+<li>Always clean the dataset before importing to ensure all required fields are present and formatted correctly.</li>
+<li>Missing data placeholders (e.g., <code>-99</code> for numerical or &quot;unknown&quot; for categorical) should be configured as needed.</li>
+<li>Verify column assignments using the <strong>Data Table View</strong> tab for a clear visualization of the dataset structure.</li>
+<li>Use ZIP format whenever possible for faster uploads, especially for large block models.</li>
+</ul></div></div>
+<hr>
+<p>By following these steps, you can ensure an efficient and accurate block model import process, enabling you to proceed with constructing and analyzing your data seamlessly.</p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="export-2"><strong>Export</strong><a href="#export-2" class="hash-link" aria-label="Direct link to export-2" title="Direct link to export-2">​</a></h2>
+<p>In this section, you can select both categorical and numerical variables that you wish to export, as well as those you do not wish to export.</p>
+<ol>
+<li>Select the Block Model:<!-- -->
+<ul>
+<li>From the &#x27;BlockModel&#x27; dropdown menu, select the block model project from which you wish to export data.</li>
+</ul>
+</li>
+<li>Apply Filters:<!-- -->
+<ul>
+<li>If you have created filters within the selected project, you can apply them by choosing the appropriate filter from the &#x27;Filter&#x27; dropdown menu. Remember, if multiple filters are available, they cannot be applied simultaneously—you&#x27;ll need to create a combined filter if necessary.</li>
+</ul>
+</li>
+<li>Select Attributes:<!-- -->
+<ul>
+<li>Check the boxes next to &#x27;Categorical Attributes&#x27; and &#x27;Numerical Attributes&#x27; to select the variables you wish to export. By default, the East, North, and Elevation coordinates are included.</li>
+</ul>
+</li>
+<li>Export File:<!-- -->
+<ul>
+<li>Once you have made your selections, click the &#x27;Export&#x27; button. The file will be saved in CSV format to your computer, which can then be used as needed for your analyses or presentations.</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="manage-2"><strong>Manage</strong><a href="#manage-2" class="hash-link" aria-label="Direct link to manage-2" title="Direct link to manage-2">​</a></h2>
+<p>The <strong>Block Model Manager</strong> is designed for managing block model datasets used in geological and mining workflows. It supports renaming, exporting, and deleting block models, ensuring streamlined management of volumetric data.</p>
+<p>Key Features</p>
+<ol>
+<li><strong>Viewing and Organizing</strong>
+<ul>
+<li>Displays a list of all imported block models with attributes like <strong>name</strong>, <strong>creation date</strong>, and <strong>size</strong>.</li>
+<li>Users can sort and group block models for efficient navigation and organization.</li>
+</ul>
+</li>
+<li><strong>Renaming</strong>
+<ul>
+<li>Enables users to assign meaningful names to block models, making it easier to distinguish between datasets.</li>
+</ul>
+</li>
+<li><strong>Exporting</strong>
+<ul>
+<li>Generates <strong>CSV files</strong> of block model data, using the same name as the block model dataset.</li>
+<li>Exported files typically include columns for:<!-- -->
+<ul>
+<li><strong>Block ID</strong></li>
+<li><strong>Coordinates (X, Y, Z)</strong></li>
+<li><strong>Attributes</strong> (e.g., grade, density, lithology)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Deleting</strong>
+<ul>
+<li>Removes block model datasets permanently from the workspace.</li>
+<li><strong>Caution</strong>: Ensure no critical data is lost before deletion.</li>
+</ul>
+</li>
+</ol>
+<p>Example: CSV Download</p>
+<p>A block model named MB_Demo would export as MB_Demo.csv, including data like:</p>
+<ul>
+<li><strong>Block ID</strong></li>
+<li><strong>X</strong>, <strong>Y</strong>, <strong>Z</strong> (block centroid coordinates as Easting, Northing, Elevation)</li>
+<li><strong>Grade values</strong> (e.g., Au, Ag)</li>
+<li><strong>Other attributes</strong> (e.g., density, rock type)</li>
+</ul>
+<div class="theme-admonition theme-admonition-note admonition_xJq3 alert alert--secondary"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"></path></svg></span>note</div><div class="admonitionContent_BuS1"><p><strong>Note:</strong> In the <strong>Properties and Edit</strong> section, you can view, modify, and manage various attributes or columns of the dataset. Additionally, you can create new attributes using calculated fields and customize the content for export through a tailored download.</p></div></div>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="properties-2"><strong>Properties</strong><a href="#properties-2" class="hash-link" aria-label="Direct link to properties-2" title="Direct link to properties-2">​</a></h2>
+<p>In this section, you can select the block model project, which will indicate its general attributes such as name, number of blocks per coordinate, the model&#x27;s origin point, and block size.</p>
+<p><strong>Follow these steps:</strong></p>
+<ol>
+<li>Select the Block Model Project:<!-- -->
+<ul>
+<li>Use the &#x27;BlockModel&#x27; dropdown to select the block model project you wish to examine.</li>
+<li>Once a project is selected, the interface will display general attributes such as the project&#x27;s name, the number of blocks per coordinate, the model&#x27;s origin point, and block size.</li>
+</ul>
+</li>
+<li>View Model Attributes:<!-- -->
+<ul>
+<li>The selected block model&#x27;s details are then presented. You will see the total number of blocks, as well as the numeric and categorical variables that have been loaded into the model.</li>
+</ul>
+</li>
+<li>Examine the Database:<!-- -->
+<ul>
+<li>At the bottom part of the interface, the database is visually presented in a tabulated form showing rows and columns.</li>
+<li>This view will typically show the first 100 elements, providing a snapshot of the model&#x27;s dataset.</li>
+</ul>
+</li>
+</ol>
+<p>Secondly, it will display the attributes of the created model details; total number of blocks, numeric variables, and categorical variables loaded into it. At the bottom, the database will be visually displayed with its rows and columns for the first 100 elements.</p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="edit-1"><strong>Edit</strong><a href="#edit-1" class="hash-link" aria-label="Direct link to edit-1" title="Direct link to edit-1">​</a></h2>
+<p>We have the capability to modify the imported data by altering column names, adjusting attribute types between numerical or categorical, and potentially removing columns from the database. Following the desired modifications, it is imperative to execute the &#x27;apply&#x27; option to enact these changes. An example of modification and how the interface looks.</p>
+<ol>
+<li>Select the Block Model: Choose the block model you want to edit from the &#x27;BlockModel&#x27; dropdown menu.</li>
+<li>Edit Column Names and Types: For each column in the dataset:<!-- -->
+<ul>
+<li>Change the column name by typing the new desired name into the &#x27;New Name&#x27; field corresponding to that column.</li>
+<li>Adjust the attribute type by selecting either &#x27;Numerical&#x27; or &#x27;Categorical&#x27; from the dropdown menu in the &#x27;Data Type&#x27; column.</li>
+<li>If you wish to remove a column entirely, select &#x27;Delete&#x27; from the &#x27;Data Type&#x27; dropdown menu for that column.</li>
+</ul>
+</li>
+<li>Apply Changes: Once all desired modifications are made, click the &#x27;Apply&#x27; button to save the changes to the database.</li>
+</ol>
+<p><strong>Example of Modification:</strong></p>
+<ul>
+<li>To rename the column &#x27;Mo_Nuestro&#x27; to &#x27;Mo_I&#x27;, you would enter &#x27;Mo_I&#x27; in the &#x27;New Name&#x27; field for the &#x27;Mo_Nuestro&#x27; row.</li>
+<li>To remove the &#x27;Mo_Ellos&#x27; column from the database, you would select &#x27;Delete&#x27; from the &#x27;Data Type&#x27; dropdown for the &#x27;Mo_Ellos&#x27; row.</li>
+</ul>
+<p>Note: The columns &#x27;Easting&#x27;, &#x27;Northing&#x27;, and &#x27;Elevation&#x27; are essential to the data structure and are not available for modification in this interface.</p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="create"><strong>Create</strong><a href="#create" class="hash-link" aria-label="Direct link to create" title="Direct link to create">​</a></h2>
+<p>This section allows for the creation of a block model by defining the number of blocks per coordinate, the origin point, and the block size in that orientation.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="step-by-step-workflow"><strong>Step-by-Step Workflow</strong><a href="#step-by-step-workflow" class="hash-link" aria-label="Direct link to step-by-step-workflow" title="Direct link to step-by-step-workflow">​</a></h3>
+<p>Step 1: Define Block Model Parameters</p>
+<ul>
+<li>Navigate to the section for creating a new block model within the software.</li>
+<li>Enter the number of blocks per coordinate axis (Easting, Northing, and Elevation).</li>
+<li>Specify the origin point coordinates where the block model should begin.</li>
+<li>Set the size for each block within the model, ensuring that it corresponds to the actual physical measurements you intend to represent.</li>
+</ul>
+<p>Step 2: Initialize the Block Model</p>
+<ul>
+<li>Upon defining the parameters, initiate the creation of the block model.</li>
+<li>The software will generate a preliminary volume represented by empty-white blocks. These blocks constitute the basic structure of your model without any assigned attributes or data.</li>
+</ul>
+<p>Step 3: Manipulate and Add Data to Blocks</p>
+<ul>
+<li>Use filters to select and manipulate specific blocks within the model.</li>
+<li>Apply calculations and other options to assign data and attributes to the blocks.</li>
+<li>If needed, import or input data to enrich the model with information relevant to your project.</li>
+</ul>
+<p>Step 4: Visualize and Verify the Model</p>
+<ul>
+<li>Utilize the software’s visualization tools to view the block model in 3D.</li>
+<li>Verify that the block dimensions and placement correspond to your project requirements.</li>
+</ul>
+<p>Step 5: Apply the Creation</p>
+<ul>
+<li>After reviewing all parameters and data, confirm the creation of the block model.</li>
+<li>Select the &#x27;Create New Block Model&#x27; option to finalize and construct the model within the software.</li>
+</ul>
+<p>Step 6: Save and Continue Workflow</p>
+<ul>
+<li>Once the block model is created, save the project.</li>
+<li>A confirmation message should appear, signaling successful creation. If there are issues, such as exceeding the maximum number of blocks (e.g., 20 million), an error message will guide you to make necessary adjustments.</li>
+<li>The new block model will now be available for selection and use in other workflows, marking it as a new active project.</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="rotate"><strong>Rotate</strong><a href="#rotate" class="hash-link" aria-label="Direct link to rotate" title="Direct link to rotate">​</a></h2>
+<p>In a manner akin to the rotation feature available for point-type elements within the workspace section, users have the option to select a project (database) for applying rotation. This process necessitates specification of parameters for the Easting, Northing coordinates, and an angle measured from 0 to 360 degrees as azimuth with respect to the North.</p>
+<p>Upon applying the rotation, the original coordinates are preserved within newly created columns named Orig_X and Orig_Y, while the columns designated for Easting and Northing are updated with the new coordinates.</p>
+<p>This functionality ensures internal workflow consistency within the software by seamlessly incorporating these adjustments into the dataset.</p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="populate"><strong>Populate</strong><a href="#populate" class="hash-link" aria-label="Direct link to populate" title="Direct link to populate">​</a></h2>
+<p>Here, you&#x27;ll discover how to complete incomplete block models and generate relevant extensions effectively.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="populate-workflow"><strong>Populate Workflow</strong><a href="#populate-workflow" class="hash-link" aria-label="Direct link to populate-workflow" title="Direct link to populate-workflow">​</a></h3>
+<ol>
+<li>Complete Missing Data:<!-- -->
+<ul>
+<li>Fill in missing data or blocks to ensure your model aligns with the &quot;snap-to-grid&quot; principle for precise accuracy.</li>
+</ul>
+</li>
+<li>Generate Model Extensions:<!-- -->
+<ul>
+<li>To experiment with different scenarios or to integrate new data, generate extensions within your block model.</li>
+</ul>
+</li>
+<li>Define Model Parameters:<!-- -->
+<ul>
+<li>In the &quot;Final Extension&quot; interface, crucial parameters such as origin and block size are determined. Specify the necessary details to accurately define your Block Model.</li>
+</ul>
+</li>
+<li>Review and Verify:<!-- -->
+<ul>
+<li>After setting your parameters, review all aspects and verify your project&#x27;s details to ensure everything is correct.</li>
+</ul>
+</li>
+<li>Populate Your Model:<!-- -->
+<ul>
+<li>Click on the &quot;Populate Block Model&quot; button to apply changes and update your project. A visual representation of before and after the population process can help to confirm the success of the operation.</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="calculate"><strong>Calculate</strong><a href="#calculate" class="hash-link" aria-label="Direct link to calculate" title="Direct link to calculate">​</a></h2>
+<p>This tutorial will walk you through the process of using numerical and conditional expressions to compute new data columns, focusing on generating new attributes in your dataset from operations and calculations performed on and between existing columns. The first step is to select the project, the database, with which you will be working, or in other words, the block model.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="numerical-expressions-1"><strong>Numerical Expressions</strong><a href="#numerical-expressions-1" class="hash-link" aria-label="Direct link to numerical-expressions-1" title="Direct link to numerical-expressions-1">​</a></h3>
+<p>To calculate new numerical values based on existing data, we use numerical expressions. These expressions allow you to perform arithmetic operations directly in Pandas.</p>
+<ul>
+<li>How to Use: Simply type your numerical expression into the &#x27;Condition&#x27; field when adding a new attribute. Use standard arithmetic operators like <strong>+</strong> (addition), <strong>-</strong> (subtraction), <strong>*</strong> (multiplication), <strong>/</strong> (division), and <strong>**</strong> (exponentiation). You can also include Numpy functions and constants in these expressions for more complex calculations.</li>
+<li>Important Note: Always include the dataframe reference df when using column names in your expressions.</li>
+</ul>
+<p>Example 1: To scale a column named &#x27;cus&#x27; by 100 and then divide by the column &#x27;cut&#x27; increased by 0.0001, you would enter 100*df[&#x27;cus&#x27;]/(df[&#x27;cut&#x27;] + 0.0001).</p>
+<p>Example 2: For a calculation involving Numpy&#x27;s constant pi and a column named &#x27;length&#x27;, the expression would be 4/3*np.pi*df[&#x27;length&#x27;]**3.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="conditional-expressions-1"><strong>Conditional Expressions</strong><a href="#conditional-expressions-1" class="hash-link" aria-label="Direct link to conditional-expressions-1" title="Direct link to conditional-expressions-1">​</a></h3>
+<p>Conditional expressions are used to create new columns based on conditions. These are written using apply() and lambda functions in Pandas.</p>
+<ul>
+<li>How to Use: Type the condition directly into the &#x27;Condition&#x27; field. This will implicitly create a lambda function that applies your condition to each row in the dataframe.</li>
+<li>Important Note: Use row to reference individual row values in your conditional expressions.</li>
+</ul>
+<p>Example 1: To assign a value based on the contents of the &#x27;Ue&#x27; column, enter: &quot;IN&quot; if row[&#x27;Ue&#x27;] in (0,1) else &quot;MIDDLE&quot; if row[&#x27;Ue&#x27;] == 8 else &quot;OUT&quot;.</p>
+<p>Example 2: To categorize rows based on the &#x27;Litho&#x27; and &#x27;FrnE&#x27; columns, the condition would be: &quot;IN&quot; if row[&#x27;Litho&#x27;] in (&#x27;FrLm&#x27;,&#x27;FrNE&#x27;) else &quot;MIDDLE&quot; if row[&#x27;Litho&#x27;] == &quot;OX&quot; else &quot;OUT&quot;.</p>
+<p>Applying Your Expressions: Once you&#x27;ve entered your custom attribute name, chosen the data type, and typed in your condition, simply click on the &#x27;Add new attribute&#x27; button. This will add the new computed column to your dataframe based on the expressions you&#x27;ve provided.</p>
+<p>Final Tips</p>
+<ul>
+<li>Always ensure your expressions are syntactically correct to avoid errors.</li>
+<li>Refer to the official Pandas documentation for more detailed information on functions and syntax.</li>
+<li>Experiment with simple expressions first before moving on to more complex computations.</li>
+</ul>
+<p>By following this guide, you should be able to enhance your data analysis by adding new, dynamically computed attributes to your Pandas dataframe with ease.</p>
+<div class="theme-admonition theme-admonition-note admonition_xJq3 alert alert--secondary"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"></path></svg></span>note</div><div class="admonitionContent_BuS1"><p>These notes are also referenced in the Calculate section for &#x27;Points.&#x27; This is because both the Points and Blocks sections of the workflow feature a designated area for performing calculations. In both cases, the mathematical construction follows the same guidelines and parameters.*</p></div></div>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="evaluate"><strong>Evaluate</strong><a href="#evaluate" class="hash-link" aria-label="Direct link to evaluate" title="Direct link to evaluate">​</a></h2>
+<p>The Evaluate tool allows users to classify and label blocks in a block model based on their position relative to uploaded Topographies and/or Meshes. This tool is essential for creating stratigraphic, lithological, or categorical profiles by sequentially applying evaluation surfaces to the block model.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="evaluate-workflow"><strong>Evaluate workflow</strong><a href="#evaluate-workflow" class="hash-link" aria-label="Direct link to evaluate-workflow" title="Direct link to evaluate-workflow">​</a></h3>
+<p>Step 1: Select the Block Model</p>
+<ul>
+<li>From the dropdown menu, select the block model you want to evaluate.</li>
+<li>Ensure the block model is already uploaded and available in the project.</li>
+</ul>
+<p>Step 2: Add New Attribute</p>
+<ul>
+<li>Use the option to add a new attribute. The options for topographies or meshes to use are displayed.</li>
+<li>You must name the attribute and indicate the order. Follow the next steps</li>
+</ul>
+<p>Step 3: Define Evaluation Surfaces</p>
+<ul>
+<li>Choose the Topographies and/or Meshes from the available project data to apply as evaluation surfaces.</li>
+<li>The evaluation surfaces will classify blocks based on their relative position:<!-- -->
+<ul>
+<li>Topography: Blocks above the topography are labeled as Air.</li>
+<li>Meshes: Blocks within a mesh will be labeled with the corresponding mesh name.</li>
+</ul>
+</li>
+</ul>
+<p>Step 4: Organize the Evaluation Order</p>
+<ul>
+<li>The order of the surfaces is critical and must follow a logical sequence to ensure proper categorization.<!-- -->
+<ul>
+<li>For example: Air → Lithology 1 → Lithology 2, progressing from higher elevations to lower elevations.</li>
+</ul>
+</li>
+<li>This sequential approach allows the creation of consistent stratigraphic or lithological profiles.</li>
+</ul>
+<p>Step 5: Apply the Evaluation</p>
+<ul>
+<li>Click on Apply to assign a custom attribute to the block model based on the evaluation criteria.</li>
+<li>Unclassified blocks (those not assigned by any surface) will automatically be labeled as Unknown.</li>
+</ul>
+<p>Step 6: Review and Finalize</p>
+<ul>
+<li>After applying the evaluation, the labeled attribute will be added to the block model database.</li>
+<li>If needed, remove an Evaluate Attribute setting without affecting the attribute column in the block model.</li>
+</ul>
+<p>Key Notes</p>
+<ul>
+<li><strong>Topographies</strong>: Only classify blocks above them (e.g., Air).</li>
+<li><strong>Meshes</strong>: Classify blocks within their boundaries, using the mesh name as the label.</li>
+<li><strong>Order Consistency</strong>: Maintain a consistent sequence for evaluation surfaces to achieve meaningful categorizations.</li>
+<li><strong>Unclassified Blocks</strong>: Blocks that do not match any surface criteria will be labeled as <strong>Unknown</strong>.</li>
+<li><strong>Iterative Process</strong>: Think of this as constructing profiles step by step, ensuring precision in every layer.</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="downscale"><strong>Downscale</strong><a href="#downscale" class="hash-link" aria-label="Direct link to downscale" title="Direct link to downscale">​</a></h2>
+<p>The Downscale tool allows users to refine an existing block model by creating a new model with a higher resolution. This process subdivides the blocks into smaller units, enabling more detailed analysis and modeling. The tool supports both regular and sub-cell block models. Below is the step-by-step workflow:</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="downscale-workflow"><strong>Downscale Workflow</strong><a href="#downscale-workflow" class="hash-link" aria-label="Direct link to downscale-workflow" title="Direct link to downscale-workflow">​</a></h3>
+<p>Step 1: Select the Block Model</p>
+<ul>
+<li>From the dropdown menu, choose the block model you wish to refine through downscaling.</li>
+</ul>
+<p>Step 2: Review the Current Block Model Definition</p>
+<ul>
+<li>A summary table will display the descriptive parameters of the selected block model, including:<!-- -->
+<ul>
+<li>Direction (Easting, Northing, Elevation)</li>
+<li># Blocks: Number of blocks along each direction.</li>
+<li>Origin: Starting point of the block model.</li>
+<li>Max Block Size: Maximum size of the blocks in each direction.</li>
+<li>Min Block Size: Minimum size of the blocks in each direction.</li>
+<li>Current Number of Blocks: Total number of blocks in the existing model.</li>
+</ul>
+</li>
+</ul>
+<p>Step 3: Adjust Subdivision Settings</p>
+<ul>
+<li>Use the interactive sliders to specify the scaling factor for each axis:<!-- -->
+<ul>
+<li>Easting</li>
+<li>Northing</li>
+<li>Elevation</li>
+</ul>
+</li>
+<li>The scaling factor can be set to 1, 2, or 3, where:<!-- -->
+<ul>
+<li>1: No change (blocks retain their original size).</li>
+<li>2: Subdivide each block in the axis into two smaller blocks.</li>
+<li>3: Subdivide each block in the axis into three smaller blocks.</li>
+</ul>
+</li>
+</ul>
+<p>Step 4: Preview the New Block Model Definition</p>
+<ul>
+<li>As you adjust the sliders, a preview table on the right will update in real-time, showing the new parameters for the block model:<!-- -->
+<ul>
+<li>Updated # Blocks, Origin, Max Block Size, and Min Block Size for each direction.</li>
+<li>New Number of Blocks: The total number of blocks in the new model.</li>
+</ul>
+</li>
+</ul>
+<p>Step 5: Define the New Block Model Name</p>
+<ul>
+<li>Enter a unique name for the new block model in the input field provided.</li>
+</ul>
+<p>Step 6: Apply Downscaling</p>
+<ul>
+<li>Click the Apply Downscaling button to generate the new block model with the refined resolution.</li>
+</ul>
+<div class="theme-admonition theme-admonition-info admonition_xJq3 alert alert--info"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg></span>info</div><div class="admonitionContent_BuS1"><p>The <strong>Downscale</strong> tool works for both <strong>regular</strong> and <strong>sub-cell</strong> block models.</p><p>The original block model remains unchanged, and the downscaled model is saved as a separate entity with the new name you provide.</p></div></div>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="filters-1"><strong>Filters</strong><a href="#filters-1" class="hash-link" aria-label="Direct link to filters-1" title="Direct link to filters-1">​</a></h2>
+<p>When using filters, we implicitly utilize the Query function from the Pandas library. You write a condition as a string. You can use logical operators such as and, or, and not, as well as comparison operators like &gt;, &lt;, &gt;=, &lt;=, ==, and !=. You can reference column names directly without having to use[&#x27;column_name&#x27;] syntax within the query string. The use of parentheses can be helpful when we want to specify different operations grouped within the string. Another important aspect is when to use quotes. We will explain two case:</p>
+<ol>
+<li>
+<p>Column Identifiers: In the context of querying a data structure, when you reference the names of columns, you usually don’t need to use quotes if these names follow the conventions of the language or environment you&#x27;re working with. For example, if column names cannot contain spaces or special characters and must not clash with reserved keywords, then a plain, unquoted identifier is sufficient.</p>
+</li>
+<li>
+<p>String Literals: Conversely, when your query needs to match specific text within a column, that text should be enclosed in quotes. This tells the system you’re looking for an exact sequence of characters, not a column or another type of identifier. So, &#x27;Unit 1&#x27; in quotes signifies it’s a literal string to be matched in the data, not a reference to another column or entity.</p>
+</li>
+</ol>
+<p>We will explain the examples presented on the platform.</p>
+<p>For example 1: The condition is (Numerical_Attribute &gt; 30) and ((Categorical_Attribute == &#x27;Unit 1&#x27;) or (Categorical_Attribute == &#x27;Unit 2&#x27;)). This means that you want to select rows where the &#x27;Numerical_Attribute&#x27; column has a value greater than 30, and at the same time, the &#x27;Categorical_Attribute&#x27; column must be either &#x27;Unit 1&#x27; or &#x27;Unit 2&#x27;.</p>
+<p>For example 2: The condition is &#x27;Unit_3&#x27;, &#x27;Unit_7&#x27; not in Categorical_Attribute.<br>
+<!-- -->This means you want to exclude rows where the &#x27;Categorical_Attribute&#x27; is either &#x27;Unit_3&#x27; or &#x27;Unit_7&#x27;.</p>
+<div class="theme-admonition theme-admonition-note admonition_xJq3 alert alert--secondary"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"></path></svg></span>note</div><div class="admonitionContent_BuS1"><p><em>Note: These notes are also mentioned in the Filters section for &#x27;Points.&#x27; This is because both the Points and Blocks sections of the workflow have a dedicated area for applying filters. In both instances, the filter construction adheres to the same guidelines and parameters.</em></p></div></div></div></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/UserGuideWeb/docs/Elements/Point"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Point</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#features-and-considerations" class="table-of-contents__link toc-highlight"><strong>Features and considerations</strong></a></li><li><a href="#import-3" class="table-of-contents__link toc-highlight"><strong>Import</strong></a><ul><li><a href="#tips-for-successful-import" class="table-of-contents__link toc-highlight"><strong>Tips for Successful Import</strong></a></li></ul></li><li><a href="#export-2" class="table-of-contents__link toc-highlight"><strong>Export</strong></a></li><li><a href="#manage-2" class="table-of-contents__link toc-highlight"><strong>Manage</strong></a></li><li><a href="#properties-2" class="table-of-contents__link toc-highlight"><strong>Properties</strong></a></li><li><a href="#edit-1" class="table-of-contents__link toc-highlight"><strong>Edit</strong></a></li><li><a href="#create" class="table-of-contents__link toc-highlight"><strong>Create</strong></a><ul><li><a href="#step-by-step-workflow" class="table-of-contents__link toc-highlight"><strong>Step-by-Step Workflow</strong></a></li></ul></li><li><a href="#rotate" class="table-of-contents__link toc-highlight"><strong>Rotate</strong></a></li><li><a href="#populate" class="table-of-contents__link toc-highlight"><strong>Populate</strong></a><ul><li><a href="#populate-workflow" class="table-of-contents__link toc-highlight"><strong>Populate Workflow</strong></a></li></ul></li><li><a href="#calculate" class="table-of-contents__link toc-highlight"><strong>Calculate</strong></a><ul><li><a href="#numerical-expressions-1" class="table-of-contents__link toc-highlight"><strong>Numerical Expressions</strong></a></li><li><a href="#conditional-expressions-1" class="table-of-contents__link toc-highlight"><strong>Conditional Expressions</strong></a></li></ul></li><li><a href="#evaluate" class="table-of-contents__link toc-highlight"><strong>Evaluate</strong></a><ul><li><a href="#evaluate-workflow" class="table-of-contents__link toc-highlight"><strong>Evaluate workflow</strong></a></li></ul></li><li><a href="#downscale" class="table-of-contents__link toc-highlight"><strong>Downscale</strong></a><ul><li><a href="#downscale-workflow" class="table-of-contents__link toc-highlight"><strong>Downscale Workflow</strong></a></li></ul></li><li><a href="#filters-1" class="table-of-contents__link toc-highlight"><strong>Filters</strong></a></li></ul></div></div></div></div></main></div></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="col footer__col"><div class="footer__title">Docs</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://www.apmodtech.com/Publications/Articles" target="_blank" rel="noopener noreferrer" class="footer__link-item">Lectur More</a></li><li class="footer__item"><a href="https://julianmortiz.com/articles" target="_blank" rel="noopener noreferrer" class="footer__link-item">Specific Reading<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li></ul></div><div class="col footer__col"><div class="footer__title">More</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://www.apmodtech.com/" target="_blank" rel="noopener noreferrer" class="footer__link-item">Web Site<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a href="https://app.apmodtech.com/" target="_blank" rel="noopener noreferrer" class="footer__link-item">Platform<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2024 Annapurna™ Resources.</div></div></div></footer></div>
+</body>
+</html>

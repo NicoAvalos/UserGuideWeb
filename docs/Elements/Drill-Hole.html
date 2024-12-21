@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-Elements/Drill-Hole" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.6.3">
+<title data-rh="true">Drill Hole | Annapurna™ Resource</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://NicoAvalos.github.io/UserGuideWeb/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://NicoAvalos.github.io/UserGuideWeb/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://NicoAvalos.github.io/UserGuideWeb/docs/Elements/Drill-Hole"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Drill Hole | Annapurna™ Resource"><meta data-rh="true" name="description" content="The first entity corresponds to &#x27;DrillHoles&#x27;: In this section, it is possible to import, export, visualize, and composite databases related to your DrillHoles from csv files. The operations and work performed on this database, and their results, can interact with other entities in the work tree, thus providing the possibility of being called upon. The scope of each section will be detailed."><meta data-rh="true" property="og:description" content="The first entity corresponds to &#x27;DrillHoles&#x27;: In this section, it is possible to import, export, visualize, and composite databases related to your DrillHoles from csv files. The operations and work performed on this database, and their results, can interact with other entities in the work tree, thus providing the possibility of being called upon. The scope of each section will be detailed."><link data-rh="true" rel="icon" href="https://www.apmodtech.com/static/images/apmt/APMT_H_tablet.png"><link data-rh="true" rel="canonical" href="https://NicoAvalos.github.io/UserGuideWeb/docs/Elements/Drill-Hole"><link data-rh="true" rel="alternate" href="https://NicoAvalos.github.io/UserGuideWeb/docs/Elements/Drill-Hole" hreflang="en"><link data-rh="true" rel="alternate" href="https://NicoAvalos.github.io/UserGuideWeb/docs/Elements/Drill-Hole" hreflang="x-default"><link rel="stylesheet" href="/UserGuideWeb/assets/css/styles.e5e8328c.css">
+<script src="/UserGuideWeb/assets/js/runtime~main.be6fb6de.js" defer="defer"></script>
+<script src="/UserGuideWeb/assets/js/main.19e9459c.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const n=new URLSearchParams(window.location.search).entries();for(var[t,e]of n)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="navbar navbar--fixed-top"><div class="navbar__inner"><div class="navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/UserGuideWeb/"><div class="navbar__logo"><img src="/UserGuideWeb/img/apmt.png" alt="My Site Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/UserGuideWeb/img/apmt.png" alt="My Site Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">General Introduction</b></a><a class="navbar__item navbar__link" href="/UserGuideWeb/docs/Workflow_Domain_Modeling/Nearest_Neighbor">Workflows</a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/UserGuideWeb/docs/Elements/Topography_and_Meshes">Elements</a><a class="navbar__item navbar__link" href="/UserGuideWeb/docs/Analysis/intro">Analysis</a><a class="navbar__item navbar__link" href="/UserGuideWeb/docs/Utilities">Visualization</a></div><div class="navbar__items navbar__items--right"><a class="navbar__item navbar__link" href="/UserGuideWeb/docs/General_Introduction/support">Support</a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="Switch between dark and light mode (currently light mode)" aria-label="Switch between dark and light mode (currently light mode)" aria-live="polite" aria-pressed="false"><svg viewBox="0 0 24 24" width="24" height="24" class="lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" class="darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" role="button" aria-expanded="true" href="/UserGuideWeb/docs/Elements/Topography_and_Meshes">Elements</a></div><ul style="display:block;overflow:visible;height:auto" class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/UserGuideWeb/docs/Elements/Topography_and_Meshes">Topography and Meshes</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/UserGuideWeb/docs/Elements/Drill-Hole">Drill-Hole</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/UserGuideWeb/docs/Elements/Point">Point</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/UserGuideWeb/docs/Elements/Block-Model">Block Model</a></li></ul></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs" itemscope="" itemtype="https://schema.org/BreadcrumbList"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/UserGuideWeb/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><span class="breadcrumbs__link">Elements</span><meta itemprop="position" content="1"></li><li itemscope="" itemprop="itemListElement" itemtype="https://schema.org/ListItem" class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link" itemprop="name">Drill-Hole</span><meta itemprop="position" content="2"></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>Drill Hole</h1></header>
+<p>The first entity corresponds to &#x27;DrillHoles&#x27;: In this section, it is possible to import, export, visualize, and composite databases related to your DrillHoles from csv files. The operations and work performed on this database, and their results, can interact with other entities in the work tree, thus providing the possibility of being called upon. The scope of each section will be detailed.</p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="import-1"><strong>Import</strong><a href="#import-1" class="hash-link" aria-label="Direct link to import-1" title="Direct link to import-1">​</a></h2>
+<p>This section aims to create the Project, prepare the database, and perform Desurvey. The default method is &#x27;Balanced Tangent&#x27;. Other methods can be selected. The method used for working with the database is indicated at the top during the following steps. To begin, you must import the information from the Collar and Survey files, and you can add &#x27;simultaneously or later&#x27; Assay files and/or other files with interval characteristics.</p>
+<p>Once the csv file is selected and loaded, a table will appear at the bottom. The left side will display the name of the headers for each column contained in the imported csv file (Column Name), and to its right, there will be a data type selection option (Data Type). The minimum data types necessary to import and select are also indicated based on the type of file that is being loaded.</p>
+<p>Should the imported file have repeated columns (or headers that are the same), these will be duplicated on the interface&#x27;s left side. You may opt not to select the columns you don&#x27;t intend to use (leaving them not imported). To streamline the process and reduce potential confusion, users are advised to revise and edit their files prior to importing.</p>
+<p>Also, if the dataset contains any missing values in any of the columns, the respective row will be excluded from consideration.</p>
+<p>![][image1]</p>
+<p><strong>(A)Previous Point Method:</strong> Considering the collar as the starting point, the positioning of the next point is calculated using Survey measurements. Thus, the dip and azimuth of the next point are not taken into account, but rather the distance between the start and the arrival point (next) is considered. In this way, the drillhole trace is traversed from a point with direction and orientation provided by the dip and azimuth of the same current point, or &#x27;previous point&#x27;, or current point, and the path is the distance between them.</p>
+<p>If the collar is the starting point with XYZ dip(1) and azimuth(1), and the next point is dip(2), azimuth(2), and the distance between the collar and the next location of the measurement is D, then the trace has a length of D with direction and orientation dip(1) and azimuth(1).</p>
+<p><strong>(B)Following Point Method:</strong> Considering the collar as the starting point, the positioning of the next point is calculated using Survey measurements. Thus, the dip and azimuth of the next point are taken into account considering the distance between the start and this resulting point. In this way, the drillhole trace is traversed from a point with direction and orientation provided by the dip and azimuth of the next point (to which it arrives), and the path is the distance between them.</p>
+<p>If the collar is the starting point with XYZ dip(1) and azimuth(1), and the next point is dip(2), azimuth(2), and the distance between the collar and the next location of the measurement is D, then the trace has a length of D with direction and orientation dip(2) and azimuth(2).</p>
+<p><strong>(C)Balanced Tangent Method:</strong> This method projects the drillhole trace between two points in such a way that the length is balanced with the dip and azimuth measurements of each end. To achieve this, the separation distance is divided by 2, and the first segment of length d/2 is projected with the dip and azimuth of the starting point. The next segment starts halfway along the path and is projected with a length of d/2 and with the dip and azimuth of the endpoint.</p>
+<p>If the collar is the starting point with XYZ dip(1) and azimuth(1), and the next point is dip(2), azimuth(2), and the distance between the collar and the next location of the measurement is D, then the first trace has a length of D/2 with direction and orientation dip(1) and azimuth(1).Afterward, the trace continues with a distance of D/2 with the direction and orientation of dip(2) and azimuth(2), reaching the location of the next point.</p>
+<p>All of these methods proceed in a manner where point 2 transitions to become point 1, while the subsequent point for calculation becomes point 2</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="drill-hole-data-import-guide"><strong>Drill Hole Data Import Guide</strong><a href="#drill-hole-data-import-guide" class="hash-link" aria-label="Direct link to drill-hole-data-import-guide" title="Direct link to drill-hole-data-import-guide">​</a></h2>
+<p>This guide outlines the required data types and steps for importing <strong>Collar</strong> and <strong>Survey</strong> files into the platform. Each file type corresponds to specific parameters essential for accurate 3D projections and data management.</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="collar"><strong>COLLAR</strong><a href="#collar" class="hash-link" aria-label="Direct link to collar" title="Direct link to collar">​</a></h3>
+<p>To import <strong>Collar-type files</strong>, the following columns are required:</p>
+<table><thead><tr><th><strong>Parameter</strong></th><th><strong>Description</strong></th></tr></thead><tbody><tr><td><strong>DHID</strong></td><td>Drill Hole identity (unique identifier).</td></tr><tr><td><strong>East</strong></td><td>Easting coordinate (X axis).</td></tr><tr><td><strong>North</strong></td><td>Northing coordinate (Y axis).</td></tr><tr><td><strong>Elevation</strong></td><td>Elevation or altitude (Z axis).</td></tr><tr><td><strong>Drill Length</strong></td><td>Total length of the drill hole.</td></tr></tbody></table>
+<ul>
+<li>Ensure each column is clearly labeled and corresponds to its respective data type.</li>
+<li>The platform uses these specifications to correctly identify and load the <strong>Collar</strong> data.</li>
+</ul>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="survey"><strong>SURVEY</strong><a href="#survey" class="hash-link" aria-label="Direct link to survey" title="Direct link to survey">​</a></h3>
+<p>To import <strong>Survey-type files</strong>, the following columns are required:</p>
+<table><thead><tr><th><strong>Parameter</strong></th><th><strong>Description</strong></th></tr></thead><tbody><tr><td><strong>DHID</strong></td><td>Drill Hole identity (matches the Collar file).</td></tr><tr><td><strong>Distance</strong></td><td>Measured depth or distance along the drill hole.</td></tr><tr><td><strong>Azimuth</strong></td><td>Horizontal angle in sexagesimal degrees (0°-360°).</td></tr><tr><td><strong>Dip</strong></td><td>Inclination angle in sexagesimal degrees (-90° to 90°).</td></tr></tbody></table>
+<ul>
+<li>The <strong>Azimuth</strong> and <strong>Dip</strong> values must be provided in <strong>sexagesimal degrees</strong>.</li>
+<li>Verify that all values are accurate and consistent to avoid errors during loading.</li>
+</ul>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="assay"><strong>ASSAY</strong><a href="#assay" class="hash-link" aria-label="Direct link to assay" title="Direct link to assay">​</a></h3>
+<p>After importing Collar and Survey data with their required columns, the option to add files containing interval-related information about the drill holes will be available. In this section, you can add as many CSV files as needed, and it will be necessary to select the data types for each added file, including: DHID, From, To, and at least one numerical or categorical variable.</p>
+<p>It is recommended that all interval databases belonging to the project being loaded, which are intended for use or could potentially be used, be added. In the current version of the &quot;Annapurna Platform,&quot; once Desurvey is applied, new intervals cannot be separately added to the project.</p>
+<p>At the top, the tracking of the previous steps that have been completed is indicated to support continuity. This will be showing what intervale files have been uploaded.</p>
+<p>When you have imported the last one, and you find yourself back in the interface for selecting and loading new interval data, apply &#x27;Run Desurvey&#x27;. Furthermore, you have the option to upload and designate the most recent interval files that you intend to utilize before executing the &quot;Run Desurvey&quot; function. In this scenario, the recently uploaded files will also be taken into consideration</p>
+<p>Once all your files are uploaded, you can click &#x27;Run Desurvey&#x27; to have the software process the information. When the process is finished, a window will appear, indicating that the process has been completed. It will display the project name, the selected desurvey method, and the imported files. If you have loaded a file two or more times or missed any, you will notice it in the message delivered once the process is completed.</p>
+<div class="theme-admonition theme-admonition-note admonition_xJq3 alert alert--secondary"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"></path></svg></span>note</div><div class="admonitionContent_BuS1"><p>By following these steps, you ensure accurate and efficient data importation for <strong>Drill Holes</strong>. This enables seamless <strong>3D visualization</strong> and further analysis within the platform.</p></div></div>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="export"><strong>Export</strong><a href="#export" class="hash-link" aria-label="Direct link to export" title="Direct link to export">​</a></h2>
+<p>The list of projects and the list of files belonging to each project are displayed. Thus, this section allows exporting the desired columns from the selected files. It exports as CSV documents. Follow these steps:</p>
+<ol>
+<li><strong>Project and Data Set Selection:</strong>
+<ul>
+<li>Under the &#x27;Project&#x27; category, select your desired project from the dropdown menu.</li>
+<li>Similarly, click on the &#x27;Interval dataset&#x27; category to choose the specific data set you are interested in.</li>
+</ul>
+</li>
+<li><strong>Column Selection:</strong>
+<ul>
+<li>Once the project and data set are selected, a list of available column headers will appear in the lower section.</li>
+<li>Check the boxes next to the column names you want to include in your CSV file.</li>
+</ul>
+</li>
+<li><strong>Exporting the File:</strong>
+<ul>
+<li>After selecting the columns, click the &#x27;Export&#x27; button.</li>
+<li>You will be prompted to specify the directory on your device where you wish to save the exported CSV file.</li>
+</ul>
+</li>
+</ol>
+<p>These files will come with an additional 6 columns generated by the desurvey method, meaning XYZ top, mid, bottom can be visualized.
+Therefore, the file is directly available for your use on your computer, georeferenced.</p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="manage"><strong>Manage</strong><a href="#manage" class="hash-link" aria-label="Direct link to manage" title="Direct link to manage">​</a></h2>
+<p>The <strong>Drill Hole Manager</strong> section focuses on managing datasets related to drill hole intervals, such as assay data, lithological logs, or composites. It ensures efficient handling of large geological datasets used in exploration and mining workflows.</p>
+<p>Key Features</p>
+<ol>
+<li><strong>Viewing and Organizing</strong>
+<ul>
+<li>Displays imported drill hole datasets with details such as <strong>name</strong>, <strong>creation date</strong>, and <strong>size</strong>.</li>
+<li>Allows sorting and grouping to simplify data management.</li>
+</ul>
+</li>
+<li><strong>Renaming</strong>
+<ul>
+<li>Users can rename drill hole datasets to reflect their content or purpose, maintaining clarity in large projects.</li>
+</ul>
+</li>
+<li><strong>Exporting</strong>
+<ul>
+<li>Generates <strong>CSV files</strong> of drill hole data, preserving the dataset&#x27;s name.</li>
+<li>Exported files include interval data with columns like:<!-- -->
+<ul>
+<li><strong>Drill Hole ID</strong></li>
+<li><strong>From</strong> / <strong>To</strong> depths</li>
+<li><strong>Assay values</strong>, <strong>Lithology</strong>, or <strong>other attributes</strong></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Deleting</strong>
+<ul>
+<li>Allows users to delete datasets when no longer needed, ensuring efficient workspace management.</li>
+<li><strong>Caution</strong>: Deletion is permanent.</li>
+</ul>
+</li>
+</ol>
+<p>Example: CSV Download</p>
+<p>For a drill hole dataset named DemoDDH, exporting it will produce a file named DemoDDH.csv with columns such as:</p>
+<ul>
+<li><strong>DHID</strong></li>
+<li><strong>From</strong>, <strong>To</strong></li>
+<li><strong>Assay results</strong> (e.g., Au_ppm, Ag_ppm)</li>
+<li><strong>Lithology</strong> or other logged attributes</li>
+</ul>
+<p><strong>Note:</strong> In the <strong>Properties and Edit</strong> section, you can view, modify, and manage various attributes or columns of the dataset. Additionally, you can create new attributes using calculated fields and customize the content for export through a tailored download.</p>
+<p>*Compositing results in the creation of a dataset in the Point Section, due to the generation of X, Y, Z coordinates for the top, middle, and bottom positions.</p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="properties"><strong>Properties</strong><a href="#properties" class="hash-link" aria-label="Direct link to properties" title="Direct link to properties">​</a></h2>
+<p>This section allows you to view the loaded files with their columns and up to 100-1000 rows. It also allows you to directly delete projects. The 3D visualization of the information corresponds to the Visualization section of the task tree.</p>
+<ol>
+<li><strong>Select a Project:</strong> Click on the dropdown menu where it says &quot;Test&quot; to display a list of available projects. Choose the project you are interested in by clicking on it.</li>
+<li><strong>Select a Dataset Type:</strong> Click on the dropdown menu labeled &quot;Assay&quot; to see a list of dataset types, such as different intervals or specific data sets related to the project. Click on the one you need to select.</li>
+</ol>
+<p>Once both selections are made, you should have the project and the type of data you want to work with or view. The buttons labeled &quot;Project&quot; and &quot;Interval dataset&quot; are actually indications of what type of information you are expected to select from the dropdown menus, not clickable buttons.</p>
+<p><strong>So, in summary:</strong></p>
+<ul>
+<li>Use the first dropdown to choose your project.</li>
+<li>Use the second dropdown to specify the dataset related to that project you want to view.</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="compositing"><strong>Compositing</strong><a href="#compositing" class="hash-link" aria-label="Direct link to compositing" title="Direct link to compositing">​</a></h2>
+<p>The Compositing feature allows direct work with loaded Drill Hole projects to perform different composting methods. Once compositing is completed, the resulting database can be visualized and worked on from the Points type section in Elements, as this methodology generates the top, mid, and bottom X,Y,Z coordinates.</p>
+<p>The steps to apply this functionality are:</p>
+<ol>
+<li>
+<p><strong>Drill Hole project loaded.</strong></p>
+<p>This can only be applied to loaded Drill Hole projects containing databases with intervals, i.e., not just Collar and Survey; there must be at least one additional interval file. If multiple combinations of desurvey among files are desired, for example, using lithologies, mineralizations, alterations, and these are worked as independent files, they must then be loaded into the project in the initial phase; otherwise, they cannot be selected for this functionality.</p>
+</li>
+<li>
+<p><strong>Choice of Method to composite.</strong></p>
+<p>There are two general and direct methodologies: Straight and Run Length.<br>
+<!-- -->If Straight is selected, proceed to the next step.<br>
+<!-- -->If Run Length is selected, specify the support length to composite to, by default, it is 4m.</p>
+</li>
+<li>
+<p><strong>Choice of interval dataset and its numerical attribute</strong></p>
+<p>For both method cases, the interval file and the numerical attribute to consider, to which the compositing will be applied, must be selected; for example, Assay, Cu.<br>
+<!-- -->You will also have the option to indicate the Trimming Limits, both upper and lower (Upper trimming and Lower Trimming).</p>
+<div class="theme-admonition theme-admonition-info admonition_xJq3 alert alert--info"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg></span>info</div><div class="admonitionContent_BuS1"><ul>
+<li>If you do not wish to composite considering categorical attributes, you are ready to perform the compositing and can apply Run Compositing.</li>
+</ul></div></div>
+</li>
+<li>
+<p><strong>Compositing with categorical attributes (optional).</strong></p>
+</li>
+</ol>
+<p>If after step 3, you wish to composite with categorical attributes either to calculate majorities and/or to perform compositing by categorical breaks (by lithology, for example), you must select &quot;With categorical attributes&quot;.</p>
+<p><em><strong>This will enable 3 options to select</strong></em></p>
+<ol>
+<li>
+<p><strong>Interval dataset:</strong> You must select the file that contains the categorical attribute you wish to use, remembering that it must be an interval file, i.e., the category with its From To interval must be defined.</p>
+</li>
+<li>
+<p><strong>Hard Limits:</strong> This option will indicate whether to perform a compositing breaking by the selectable categorical variable or without breaking by the numerical variable. If no breaks are generated, the majority calculation of that categorical variable is worked on indirectly at the time of performing the compositing. When making a break, option (iii) is on.</p>
+</li>
+<li>
+<p><strong>Braking by:</strong> You must select the categorical attribute that will guide the break of the compositing. This will generate the interaction between the From-To of step 3 and the From-To of the selectable categorical variable, and if you chose the Run Length option, it will consider the indicated support length.</p>
+</li>
+</ol>
+<p>For example, if you wish to make a break by lithology, in point (i) you must select the file containing the column with the lithologic attribute, in point (ii) indicate Hard Limits, and in point (iii) indicate the name of the column containing the Lithologies, and then in the interface below select the values (names) of the lithologies considered.</p>
+<p>In this way, by applying Run Compositing, when there is a lithological change, this new Form of the lithology marks the beginning to consider the support length of the Run length, in which it will composite the numerical variable.</p>
+<div class="theme-admonition theme-admonition-caution admonition_xJq3 alert alert--warning"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg></span>caution</div><div class="admonitionContent_BuS1"><p>Compositing generates a dataset in the Point Section by providing X, Y, Z coordinates for the top, middle, and bottom positions. This resulting file can be visualized in the Points section under Elements, downloaded, and projected in 3D.</p></div></div></div></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/UserGuideWeb/docs/Elements/Topography_and_Meshes"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Topography and Meshes</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/UserGuideWeb/docs/Elements/Point"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Point</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#import-1" class="table-of-contents__link toc-highlight"><strong>Import</strong></a></li><li><a href="#drill-hole-data-import-guide" class="table-of-contents__link toc-highlight"><strong>Drill Hole Data Import Guide</strong></a><ul><li><a href="#collar" class="table-of-contents__link toc-highlight"><strong>COLLAR</strong></a></li><li><a href="#survey" class="table-of-contents__link toc-highlight"><strong>SURVEY</strong></a></li><li><a href="#assay" class="table-of-contents__link toc-highlight"><strong>ASSAY</strong></a></li></ul></li><li><a href="#export" class="table-of-contents__link toc-highlight"><strong>Export</strong></a></li><li><a href="#manage" class="table-of-contents__link toc-highlight"><strong>Manage</strong></a></li><li><a href="#properties" class="table-of-contents__link toc-highlight"><strong>Properties</strong></a></li><li><a href="#compositing" class="table-of-contents__link toc-highlight"><strong>Compositing</strong></a></li></ul></div></div></div></div></main></div></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="col footer__col"><div class="footer__title">Docs</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://www.apmodtech.com/Publications/Articles" target="_blank" rel="noopener noreferrer" class="footer__link-item">Lectur More</a></li><li class="footer__item"><a href="https://julianmortiz.com/articles" target="_blank" rel="noopener noreferrer" class="footer__link-item">Specific Reading<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li></ul></div><div class="col footer__col"><div class="footer__title">More</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://www.apmodtech.com/" target="_blank" rel="noopener noreferrer" class="footer__link-item">Web Site<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a href="https://app.apmodtech.com/" target="_blank" rel="noopener noreferrer" class="footer__link-item">Platform<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2024 Annapurna™ Resources.</div></div></div></footer></div>
+</body>
+</html>
