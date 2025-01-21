@@ -2,6 +2,7 @@
 sidebar_label: 'Drill-Hole'
 sidebar_position: 3
 ---
+
 # Drill Hole
 
 The first entity corresponds to 'DrillHoles': In this section, it is possible to import, export, visualize, and composite databases related to your DrillHoles from csv files. The operations and work performed on this database, and their results, can interact with other entities in the work tree, thus providing the possibility of being called upon. The scope of each section will be detailed.
@@ -17,8 +18,8 @@ Once the csv file is selected and loaded, a table will appear at the bottom. The
 Should the imported file have repeated columns (or headers that are the same), these will be duplicated on the interface's left side. You may opt not to select the columns you don't intend to use (leaving them not imported). To streamline the process and reduce potential confusion, users are advised to revise and edit their files prior to importing.
 
 Also, if the dataset contains any missing values in any of the columns, the respective row will be excluded from consideration.
-  
-![][image1]
+
+<img src="/UserGuideWeb/img/DH_metododesurv.jpg" style={{ maxWidth: "100%", height: "auto", display: "block", margin: "20px auto" }} />
 
 **(A)Previous Point Method:** Considering the collar as the starting point, the positioning of the next point is calculated using Survey measurements. Thus, the dip and azimuth of the next point are not taken into account, but rather the distance between the start and the arrival point (next) is considered. In this way, the drillhole trace is traversed from a point with direction and orientation provided by the dip and azimuth of the same current point, or 'previous point', or current point, and the path is the distance between them.
 

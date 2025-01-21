@@ -7,11 +7,13 @@ const config = {
   tagline: 'Wellcome to User Guide',
   favicon: 'https://www.apmodtech.com/static/images/apmt/APMT_H_tablet.png',
   
-  url: 'https://your-docusaurus-site.example.com',
-  baseUrl: '/',
+  url: 'https://NicoAvalos.github.io/',
+  baseUrl: '/UserGuideWeb',
 
-  organizationName: 'NicolasAvalos', // GitHub user/org name
-  projectName: 'User Guide', // Repo name
+  organizationName: 'NicoAvalos', // GitHub user/org name
+  projectName: 'UserGuideWeb', // Repo name
+  deploymentBranch:'gh-page',
+  trailingSlash: false,
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',

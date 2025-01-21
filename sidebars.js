@@ -80,6 +80,7 @@ const sidebars = {
         'Analysis/Analysis_On_Block_Models/Grade-Tonnage-Curves',
         'Analysis/Analysis_On_Block_Models/Drill-Hole-Spacing-DHS',
         'Analysis/Analysis_On_Block_Models/Smoothing',
+        'Analysis/Analysis_On_Block_Models/LVA-Fields',
       ],
     },
   ],

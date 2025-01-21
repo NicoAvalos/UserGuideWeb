@@ -230,6 +230,55 @@ By following this guide, you should be able to enhance your data analysis by add
 
 ---
 
+## **Evaluate** {#Evaluate}
+
+The **Points: Evaluate** tool allows you to generate a custom attribute by labeling points based on their spatial relationship to meshes and topographies. Follow the steps below to configure and apply this functionality:
+
+---
+
+This tool evaluates points in a dataset by:
+
+1. Assigning labels to points that fall **inside meshes**, using the corresponding mesh name.
+2. Assigning labels to points that are **above topographies**, using the corresponding topography name.
+3. Labeling any points that remain unclassified by either criterion as **"Unknown"**.
+
+The order of meshes and topographies affects the labeling process, with the first item in the list having the highest priority.
+
+---
+
+      **Steps to Configure**
+
+1. **Select Points Dataset**:
+   - Use the dropdown menu to select the dataset you want to evaluate.
+
+2. **Name the Attribute**:
+   - Enter a name for the new attribute in the text field (e.g., `Eval_Point`).
+
+3. **Organize Available Meshes and Topographies**:
+   - Drag items from the **Available Meshes and Topographies** list to the **Selected Order** list.
+   - Arrange the items in the **Selected Order** list to determine the priority. Items at the top have the highest priority.
+
+4. **Apply Changes**:
+   - Click **Apply** to generate the attribute and assign labels to the points based on the configured settings.
+
+5. **Delete Settings** (if needed):
+   - Click **Delete** to remove the evaluation configuration. Note that this action removes the settings but retains the attribute column in the dataset.
+
+:::info
+**Points Inside Meshes**: Points falling within a mesh are labeled with the mesh name.
+**Points Above Topographies**: Points positioned above a topography are labeled with the topography name.
+**Unclassified Points**: Any points that do not meet either condition are labeled as **"Unknown"**.
+:::
+
+:::tip
+Ensure meshes and topographies are correctly imported and listed in the **Available Meshes and Topographies** section.
+Use the drag-and-drop feature in the **Selected Order** list to assign priority based on your specific requirements.
+:::
+
+By following these steps, you can easily classify and analyze spatial relationships in your dataset.
+
+---
+
 ## **Filters** {#filters}
 
 When using filters, we implicitly utilize the Query function from the Pandas library. You write a condition as a string. You can use logical operators such as and, or, and not, as well as comparison operators like \>, \<, \>=, \<=, \==, and \!=. You can reference column names directly without having to use\['column\_name'\] syntax within the query string. The use of parentheses can be helpful when we want to specify different operations grouped within the string.
