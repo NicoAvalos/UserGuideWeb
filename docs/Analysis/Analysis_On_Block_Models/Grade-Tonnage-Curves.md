@@ -2,7 +2,7 @@
 sidebar_label: 'Grade Tonnage Cruves'
 ---
 
-# **Grade-tonnage curves**
+# Grade-tonnage curves
 
 Step 1: Block Model Selection
 

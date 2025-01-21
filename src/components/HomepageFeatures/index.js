@@ -27,7 +27,7 @@ const FeatureList = [
   },
   {
     title: 'Access Anywhere, Anytime',
-    Svg: require('@site/static/img/en-todos-lados.svg').default,
+      Svg: require('@site/static/img/en-todos-lados.svg').default,
     description: (
       <>
       Work from anywhere with just an internet connection and drive your projects forward.

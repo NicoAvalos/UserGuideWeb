@@ -19,7 +19,11 @@ Should the imported file have repeated columns (or headers that are the same), t
 
 Also, if the dataset contains any missing values in any of the columns, the respective row will be excluded from consideration.
 
-<img src="/UserGuideWeb/img/DH_metododesurv.jpg" style={{ maxWidth: "100%", height: "auto", display: "block", margin: "20px auto" }} />
+<!-- <img src="/static/img/DH_metododesurv.jpg" style={{ maxWidth: "100%", height: "auto", display: "block", margin: "20px auto" }} /> -->
+
+<!-- <link href='@site/static/img/DH_metododesurv.jpg' style={{ maxWidth: "100%", height: "auto", display: "block", margin: "20px auto" }} /> -->
+
+![Description](../../static/img/DH_metododesurv.jpg)
 
 **(A)Previous Point Method:** Considering the collar as the starting point, the positioning of the next point is calculated using Survey measurements. Thus, the dip and azimuth of the next point are not taken into account, but rather the distance between the start and the arrival point (next) is considered. In this way, the drillhole trace is traversed from a point with direction and orientation provided by the dip and azimuth of the same current point, or 'previous point', or current point, and the path is the distance between them.
 

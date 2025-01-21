@@ -2,7 +2,7 @@
 sidebar_label: 'Block Model'
 ---
 
-# **Block Models** {#block-models}
+# Block Models {#block-models}
 
 The **Block Models** section enables you to create and manage block models by importing your database. These models allow you to organize and visualize mining project data, with the added capability to view them in 3D. If you have existing projects in the **DrillHole** or **Point** sections, the CSV files you’ve generated and exported can be imported here to construct a block model from that data.
 

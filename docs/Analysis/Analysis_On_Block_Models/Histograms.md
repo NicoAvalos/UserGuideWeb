@@ -2,7 +2,7 @@
 sidebar_label: 'Histogram'
 sidebar_position: 2
 ---
-# **Histograms** {#histograms}
+# Histograms {#histograms}
 
 The histogram construction tool allows users to analyze and visualize the distribution of attributes from a dataset. It supports both **Point** datasets and **Block Models**, offering a seamless workflow for data exploration. Below is a detailed step-by-step process for using the tool:
 
